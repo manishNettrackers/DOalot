@@ -1,0 +1,191 @@
+.itemViewTab {
+	PADDING: 0px; MARGIN: 0px; FONT: bold 12px Arial;LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.itemViewTab LI {
+	DISPLAY: inline; MARGIN-right: 3px; margin-top:3px; float:left;
+}
+.itemViewTab LI A {
+	BORDER: #778 0px solid; outline:none; background:#000; PADDING: 0px; COLOR: #2d2b2b; MARGIN: 0px; TEXT-DECORATION: none; display:block; width:17px;
+}
+
+.itemViewTab LI A:visited {
+	COLOR: #2d2b2b
+}
+a#expand_button2{
+	background-image:url(../images/expand_button2.gif);
+	width:17px;
+	height:17px;
+	display:block;
+}
+a#expand_button{
+	background-image:url(../images/expand_button.gif);
+	width:17px;
+	height:17px;
+	display:none;
+}
+/*a:hover#expand_button{
+	background-image:url(../images/expand_button_green.gif);
+	width:17px;
+	height:17px;
+	display:block;
+}
+a:active#expand_button{
+	background-image:url(../images/expand_button_green.gif);
+	width:17px;
+	height:17px;
+	display:none;
+}
+a:hover#expand_button2{
+	background-image:url(../images/expand_button2_green.gif);
+	width:17px;
+	height:17px;
+	display:block;
+}
+*/
+.itemViewTab LI A:hover {
+	COLOR: #2d2b2b; TEXT-DECORATION: underline; 
+	/*background:#98AD22;*/
+}
+.itemViewTab LI A.selectedThumb {
+	POSITION: relative; 
+}
+.itemViewTab LI A.selected {
+	background:#98AD22;
+}
+.itemViewTab LI A.selected:hover {
+	TEXT-DECORATION: none
+}
+.tabcontent {
+	DISPLAY: none
+}
+
+/* Project Participants tabs */
+.particpts {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 1px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 3px; FONT: bold 11px Arial; MARGIN-LEFT: 0px; PADDING-TOP: 3px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+.particpts LI {
+	DISPLAY: inline; MARGIN: 0px
+}
+.particpts LI A {
+	BORDER-RIGHT: #ccc 1px solid; outline:none; PADDING-RIGHT: 12px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 12px; Z-INDEX: 1; BACKGROUND:#eee url(../images/tabbg.gif) repeat-x left top; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px solid; COLOR: #333333; MARGIN-RIGHT: 2px; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 0px solid; POSITION: relative; TEXT-DECORATION: none
+}
+.particpts LI A:visited {
+	COLOR: #333;
+}
+.particpts LI A:hover {
+	COLOR: #333; TEXT-DECORATION: none; background:#eee;
+}
+.particpts LI A.selected {
+	POSITION: relative;
+}
+.particpts LI A:hover {
+	BACKGROUND:#99AE25 url(../images/tabbg_f2.gif) repeat-x left top; BORDER-BOTTOM-COLOR: white; color:#fff;
+}
+.particpts LI A.selected {
+	BACKGROUND:#99AE25 url(../images/tabbg_f2.gif) repeat-x left top; BORDER-BOTTOM-COLOR: white; color:#fff;
+}
+.particpts LI A.selected:hover {
+	TEXT-DECORATION: none
+}
+.partTabBar {background:#99AE25; padding:2px; color:#999999; font-size:11px; text-align:right}
+/* Project Participants tabs end */
+
+
+
+
+
+@media Print    
+{
+.tabcontent {
+	DISPLAY: block! important
+}
+    }
+.modernbricksmenu2 {
+	PADDING-RIGHT: 0px; BORDER-TOP: #d25a0b 5px solid; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; WIDTH: 362px; PADDING-TOP: 0px; voice-family: inherit
+}
+.modernbricksmenu2 UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 10px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.modernbricksmenu2 LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 2px 0px 0px; TEXT-TRANSFORM: uppercase; PADDING-TOP: 0px
+}
+.modernbricksmenu2 A {
+	PADDING-RIGHT: 10px; BORDER-TOP: white 1px solid; DISPLAY: block; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 5px; MARGIN: 0px 1px 0px 0px; FONT: bold 11px Arial; COLOR: white; PADDING-TOP: 5px; BACKGROUND-COLOR: black; TEXT-DECORATION: none
+}
+.modernbricksmenu2 A:hover {
+	COLOR: white; BACKGROUND-COLOR: #d25a0b
+}
+.modernbricksmenu2 A.selected {
+	BORDER-LEFT-COLOR: #d25a0b; BORDER-BOTTOM-COLOR: #d25a0b; COLOR: white; BORDER-TOP-COLOR: #d25a0b; BACKGROUND-COLOR: #d25a0b; BORDER-RIGHT-COLOR: #d25a0b
+}
+.tabcontent {
+	DISPLAY: none
+}
+
+@media Print    
+{
+.tabcontent {
+	DISPLAY: block! important
+}
+    }
+.indentmenu {
+	FONT: bold 13px Arial; WIDTH: 100%
+}
+.indentmenu UL {
+	PADDING-RIGHT: 0px; BORDER-TOP: navy 1px solid; PADDING-LEFT: 0px; BACKGROUND: url(indentbg.gif) black repeat-x center center; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.indentmenu UL LI {
+	DISPLAY: inline
+}
+.indentmenu UL LI A {
+	BORDER-RIGHT: navy 1px solid; PADDING-RIGHT: 11px; PADDING-LEFT: 11px; FLOAT: left; PADDING-BOTTOM: 5px; COLOR: white; PADDING-TOP: 5px; TEXT-DECORATION: none
+}
+.indentmenu UL LI A:visited {
+	COLOR: white
+}
+.indentmenu UL LI A.selected {
+	BACKGROUND: url(indentbg2.gif) black repeat-x center center; PADDING-BOTTOM: 4px; COLOR: white! important; PADDING-TOP: 6px
+}
+.tabcontentstyle {
+	BORDER-RIGHT: gray 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: gray 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 10px; BORDER-LEFT: gray 1px solid; WIDTH: 450px; PADDING-TOP: 10px; BORDER-BOTTOM: gray 1px solid
+}
+.tabcontent {
+	DISPLAY: none
+}
+
+@media Print    
+{
+.tabcontent {
+	DISPLAY: block! important
+}
+
+}
+.ltgreen { background:#E2EDA5;}
+
+/* Tab DropDown */
+.particpts LI UL {
+	 FONT-WEIGHT: normal;  LEFT: -999em; MARGIN: 0px; WIDTH: 150px; POSITION: absolute; HEIGHT: auto;
+}
+.particpts LI UL LI {
+	PADDING-RIGHT: 1em; WIDTH: 150px;  margin-top:8px;
+}
+.particpts LI UL LI A {
+	WIDTH: 150px; border: solid 1px #999999;
+	background:none;
+	background-color:#eeeeee;
+}
+.particpts LI:hover UL {
+	LEFT: auto
+}
+.particpts LI LI:hover UL {
+	LEFT: auto
+}
+.particpts LI.sfhover UL {
+	LEFT: auto
+}
+.particpts LI LI.sfhover UL {
+	LEFT: auto
+}
+.particpts LI LI LI.sfhover UL {
+	LEFT: auto
+}

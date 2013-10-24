@@ -1,0 +1,57 @@
+/* Scroll Bar Master Styling Starts Here */
+/* All comments can be freely removed from the css */
+
+/*  scrollgeneric is used for corrective styling of elements, and should not be modified or removed */ 
+.scrollgeneric {
+width:16px;
+position: absolute;
+top: 0; left: 0;
+}
+
+
+.vscrollerbar {
+background:url(../images/scroller/otwHand.png) no-repeat; 
+width: 15px;
+left:0;
+/* following is the bit that allows us fixed height scrollbars */
+height: 15px !important;
+/* for fixed height, we force the vscrollerbar class with an !important decleration, and fleXcroll follows suit.*/
+
+
+}
+
+* html .vscrollerbar {
+/* IE6 alpha png trick */
+/* IE7 is not affected by this trick, as it perfectly handles the normal png */
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop src='../images/scroller/hand.png');
+background-image: none;
+}
+
+/* Scroll Bar Master Styling Ends Here */
+#mycustomscroll {
+/* Typical fixed height and fixed width example */
+	width: 975px;
+	height:371px;
+	overflow: auto;
+	/* IE overflow fix, position must be relative or absolute*/
+	position: relative;
+	/*background-color: #E7EADE;*/
+	margin: 0 auto;
+	padding: 0;
+}
+.bg{background:url(../images/scroller/hand_bg2.png) no-repeat right top; }
+.bgDiv{background:url(../images/scroller/otwHand_bg.png) no-repeat right top; padding:0; margin:0; float:left; width:100%; }
+.bgDivCap{background:url(../images/scroller/div_bottom_cap.png) no-repeat right bottom;}
+.bgDivCap2{padding:0; margin:0; float:left; width:100%; }
+
+#divscroll {
+/* Typical fixed height and fixed width example */
+	width: 338px;
+	height: 350px;
+	overflow: auto;
+	/* IE overflow fix, position must be relative or absolute*/
+	position: relative;
+	/*background-color: #E7EADE;*/
+	margin: 0 auto;
+	padding: 0;
+}

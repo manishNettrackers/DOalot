@@ -1,0 +1,2514 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DOALOT.ORG</title>
+<link href="slideImages/style-mini.css" rel="stylesheet" type="text/css">
+<script src="slideImages/ga.js" async="" type="text/javascript"></script>
+<script src="slideImages/jquery.js" type="text/javascript"></script>
+<script src="slideImages/jquery_002.js" type="text/javascript"></script>
+<script src="slideImages/jquery_003.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	$('a#editme1s').click(function() {
+		var newhtml = '<div style="padding-left:24px;" id="editme1ss"><form class="inplace_form" style="display: inline; margin: 0pt; padding: 0pt;"><table cellspacing="0" cellpadding="0" border="0"> <tbody><tr>    <td valign="top"><input type="text" name="inplace_value" value="Copenhagen, Denmark" class="inplace_field" size="null" style=""></td><td valign="middle">&nbsp;<a href="#" id="inplace_saves" ><img height="17" width="17" class="" src="images/okBtn.gif" style="width: 17px; height: 18px;"></a>    </td><td><a href="#" class="inplace_cancelss" ><img height="10" width="10" class="" src="images/closeBtn.gif"></a></td>  </tr></tbody></table></form></div>'
+		$(this).parent().html(newhtml)
+	});
+
+$('#inplace_saves').click(function() {
+	//alert("sdf");
+		$('#editme1ss').html('<a  id="editme1s" href="javascript:;">Copenhagen, Denmark</a>');
+	});
+	$('.inplace_cancelss').click(function() {
+	//alert("sdf");
+		$('#editme1ss').html('<a  id="editme1s" href="javascript:;">Copenhagen, Denmark</a>');
+	});
+
+});
+	
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.contentWrap').liteSlider({
+		content : '.contentscrall',
+		width : 720,
+		height : 270,
+		autoplay : true,
+		buttonsClass : 'buttons',
+		activeClass : 'active',
+		controlBt : '.control',
+		playText : 'Play',
+		pauseText : 'Stop'
+	});
+	
+	$("#tabs").tabs();
+	$('#Q1_close').click(function() {
+		$('#Q1').hide(400);
+		$('#Q1_close').css("display","none");
+		$('#Q1_expande').css("display","block");
+	});
+	$('#Q1_expande').click(function() {
+		$('#Q1').show(400);
+		$('#Q1_expande').css("display","none");
+		$('#Q1_close').css("display","block");
+	});
+	$('#Q2_close').click(function() {
+		$('#Q2').hide(400);
+		$('#Q2_close').css("display","none");
+		$('#Q2_expande').css("display","block");
+	});
+	$('#Q2_expande').click(function() {
+		$('#Q2').show(400)
+		$('#Q2_expande').css("display","none");
+		$('#Q2_close').css("display","block");
+	});
+	
+
+});
+</script>
+<style>
+#sliderMain {
+	width: 720px;
+	padding: 0;
+	margin: 0;
+}
+.buttonsWrap{
+	float: right;
+	margin: 11px 19px 0 0;
+	padding:0;
+}
+.buttons, .control{
+	background: #494949;
+	padding: 0  10px 0 10px;
+	margin: 4px;
+	border:1px solid #ffffff;
+	line-height: 0;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.active{
+	background: #ffffff;
+	color: #00FF00;
+}
+.buttons:hover, .control:hover{
+	background: #a3a3a3;
+}
+</style>
+<script type="text/javascript" src="scripts/demo.js"></script>
+<script type="text/javascript" src="scripts/datePicker.js"></script>
+<link rel="stylesheet" type="text/css" href="css/datePicker.css" media="screen" />
+<link href="css/doalot_style.css" rel="stylesheet" type="text/css" />
+<link href="css/cssBasedLightBox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/slide.css" type="text/css" media="screen" />
+<!-- ACCORDION script START -->
+<link rel="stylesheet" href="css/accordion.css" type="text/css" media="screen" />
+<script type="text/javascript" src="scripts/accordian.js"></script>
+<!-- ACCORDION script END -->
+<script src="scripts/showHidePopup.js" type="text/javascript"></script>
+<link href="css/tabcontent.css" type="text/css" rel="stylesheet" />
+<script src="scripts/tabcontent.js" type="text/javascript"></script>
+<script src="scripts/menu.js" type="text/javascript"></script>
+<script src="scripts/checkUncheck.js" type="text/javascript"></script>
+<!-- Sliding effect -->
+<script src="scripts/slide.js" type="text/javascript"></script>
+<!-- SPOTLIGHT GALLERY -->
+<link rel="stylesheet" type="text/css" href="css/spotlight_style.css" />
+<script type="text/javascript" src="scripts/spotlight/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.editinplace.js"></script>
+<!-- SPOTLIGHT GALLERY -->
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#editme1").editInPlace({
+		saving_animation_color: "#ECF2F8",
+		callback: function(idOfEditor, enteredText, orinalHTMLContent, settingsParams, animationCallbacks) {
+			animationCallbacks.didStartSaving();
+			setTimeout(animationCallbacks.didEndSaving, 2000);
+			return enteredText;
+		}
+	});
+
+	$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+<script language="Javascript">
+$(document).ready(function() {
+
+	$('.searchField').each(function() {
+		var searchField = this.value;
+		$(this).focus(function() {
+			if(this.value == searchField) {
+				this.value = '';
+			}
+		});
+		$(this).blur(function() {
+			if(this.value == '') {
+				this.value = searchField;
+			}
+		});
+	});
+
+});
+
+</script>
+<script language="Javascript">
+$(document).ready(function() {
+
+	$('.searchFieldNew').each(function() {
+		var searchFieldNew = this.value;
+		$(this).focus(function() {
+			if(this.value == searchFieldNew) {
+				this.value = '';
+			}
+		});
+		$(this).blur(function() {
+			if(this.value == '') {
+				this.value = searchFieldNew;
+			}
+		});
+	});
+
+});
+
+</script>
+</head>
+<body style="margin:0; padding:0;">
+<script type="text/javascript" src="scripts/thumbView.js"></script>  
+<div style="width:400px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+
+  <div id="closeBtnregisterNewPod" class="closeBtnFlash" style="margin-left:416px;">
+  
+  <a href = "javascript:void(0)" onclick = "document.getElementById('registerNewPod').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnSignin').style.display='none';document.getElementById('closeBtnregisterNewPod').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  
+  <div id="registerNewPod" class="white_content" style="padding:10px; width:400px; height:250px;">
+
+<div id="registerNew" style="width:400px; border:solid 0px; float:left; display:table; margin-left:20px;">
+      <div id="signupForm" style="border:solid 0px;">
+        <div class="f16 bold ">Create a DOalot Account</div>
+        <div class="clear10"></div>
+        <div class="clear0 borderT" style="width:360px;"></div>
+        <div class="login" style="width:400px; border-right:0; padding-right:0; padding-left:0; margin-top:20px;">
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px; float:left;">Country:</div>
+          <div class="lb_txtField" style="width:220px; float:left;">
+            <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" type="text" class="" style="width:208px;">
+              <option> Select Country </option>
+            </select>
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px; float:left;">Post or Zip Code / <br />
+            City, Town or County:</div>
+          <div class="lb_txtField" style=" float:left;">
+            <input name="Search" type="text" class="searchField" style="width:67px;" />
+            <select name="Search" type="text" class="selectField" style="width:129px;">
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="clear10"></div>
+          <div class="lb_label" style="width:25px; float:left;">
+            <input name="Search" type="checkbox" />
+          </div>
+          <div class="lb_txtField" style="width:300px;"> Yes, email me about projects in my area<br />
+            <span class="smallText"> We never spam, sell or distribute your private information 
+            to other parties. Read our <a href="#">Privacy Policy</a> for more details </span> </div>
+          <div class="clear10"></div>
+          <div class="lb_label" style="width:25px; float:left;">
+            <input name="Search" type="checkbox" />
+          </div>
+          <div class="lb_txtField" style="width:300px;"> I understand, agree and accept the terms of the <a href="#">Doalot User Agreement</a> </div>
+          <div class="clear15"></div>
+          <div style="display:table; margin:0 auto; width:215px; border:solid 0px;">
+            <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('lightSignUp').style.display='block';document.getElementById('closeBtnSignUp').style.display='block';   document.getElementById('registerNewPod').style.display='none';document.getElementById('closeBtnregisterNewPod').style.display='none'"><span style="width:110px; text-align:center;">Create account</span></a></div>
+            <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="text-align:center;">Cancel</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    
+<!-- ADVANCE SEARCH POPUP START -->
+<div style="width:860px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnFlash" class="closeBtnFlash" style="margin-left:825px;"><a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnFlash').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="light" class="white_content" style="width:825px; height:620px;">
+    <div id="advSearchBoxa" style="overflow-y:auto; padding:10px;">
+      <div class="login" style="width:780px; border:solid 0px">
+        <div class="f16 bold ">Advanced Search</div>
+        <div class="clear10"></div>
+        <div class="clear10 borderT"></div>
+        <div class="floatL borderR" style="width:435px">
+          <div class="lb_label">Search Text:</div>
+          <div clsas="lb_txtField">
+            <input name="SearchText" type="text" class="inputField" id="SearchText" style="margin-right:5px; width:202px;" onfocus="showHideStuff(1,'advSerHint',22);" />
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Near Location:</div>
+          <div clsas="lb_txtField">
+            <input name="SearchText" type="text" class="inputField" id="SearchText" style="margin-right:5px; width:202px;" onfocus="showHideStuff(22,'advSerHint',22);" />
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Search for:</div>
+          <div class="lb_txtField">
+            <select name="jumpMenu" id="jumpMenu" class="inputField" style="width:210px;" onfocus="showHideStuff(2,'advSerHint',22);">
+              <option>Projects</option>
+              <option value="inner-2.html">Organizations</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Categories:</div>
+          <div class="lb_txtField">
+            <input type="text" name="" class="inputField" style="width:188px;" onfocus="showHideStuff(3,'advSerHint',22);" />
+            &nbsp;<a href="javascript:void(0);" onClick="document.getElementById('catBaloon2').style.display='block'; showHideStuff(3,'advSerHint',22);"><img src="images/dd_bullet_down.gif" width="9" height="8" border="0" alt="" /></a> </div>
+          <!-- CATEGORY BALOON START HERE -->
+          <div id="catBaloon2" style="display:none; margin-left:0px; margin-top:15px;">
+            <div class="baloon1T2"><img src="images/bubbleBox2_T.gif" width="472" height="20" alt="" /></div>
+            <div class="baloon1M" style="width:441px;">
+              <form method="GET" action="" name="myForm" onsubmit="return false;">
+                <div class="borderB" style="text-align:right; height:25px;"> <a href="javascript:void(0);" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', true);">Check All</a> &nbsp;|&nbsp; <a href="javascript:void(0);" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', false);">Uncheck All</a> &nbsp;|&nbsp; <a href="javascript:void(0);" onClick="document.getElementById('catBaloon2').style.display='none';">Apply</a> &nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onClick="document.getElementById('catBaloon2').style.display='none';" class="smallText"><img src="images/icon_closeSml.gif" width="12" height="12" border="0" alt="" /> Close</a></div>
+                <div class="clear10"></div>
+                <div class="lb_txtField">
+                  <div class="floatL pR8" style="padding-right:50px">
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Adults<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Alternative / Holistic<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Animals / Pets<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Arts &amp; Culture<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Community Development<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Counseling<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Disabled / Handicapped<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Disaster Relief<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Drugs &amp; Substance Abuse<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Education &amp; Literacy<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Environment &amp; Agriculture<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Ethnic &amp; Race<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Religion<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Science &amp; Technology<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Seniors / Elderly<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Social &amp; Welfare Services<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Spirituality<br />
+                  </div>
+                  <div class="floatL pR8">
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Sports &amp; Recreation<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Family<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Fundraising &amp; Charity<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Gay / Lesbian / Bi<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Government &amp; Politics<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Health &amp; Medical<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Homeless &amp; Poverty<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Housing Development<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Human &amp; Cival Rights<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    International<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Kids<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Legal Aid<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Men<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Teens<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Travel &amp; Tours<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Violence &amp; Abuse<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Women<br />
+                  </div>
+                  <div class="floatL pR8"> </div>
+                </div>
+                <div class="clear7"></div>
+              </form>
+            </div>
+            <div class="baloon1B"><img src="images/bubbleBox2_B.gif" width="472" height="9" /></div>
+          </div>
+          <div class="clear7"></div>
+          <!-- CATEGORY BALOON END HERE -->
+          <div class="lb_label">Language:</div>
+          <div class="lb_txtField">
+            <select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(4,'advSerHint',22);">
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Country:</div>
+          <div class="lb_label">
+            <select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(5,'advSerHint',22);">
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">State or Province:</div>
+          <div class="txtField">
+            <select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(6,'advSerHint',22);">
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">City, Town or county:</div>
+          <div class="lb_txtField">
+            <select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(7,'advSerHint',22);" >
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Post or Zip Code:</div>
+          <div class="lb_txtField">
+            <input name="" type="text" class="inputField" style="margin-right:5px; width:202px;" onfocus="showHideStuff(8,'advSerHint',22);" />
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Distance from Post or Zip Code:</div>
+          <div class="lb_txtField">
+<select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(21,'advSerHint',22);">
+              <option selected="selected">Select</option>
+              <option>10 km / 6 miles</option>
+              <option>15 km / 9 miles</option>
+              <option>20 km / 12 miles</option>
+              <option>25 km / 15 miles</option>
+              <option>30 km / 18 miles</option>
+              <option>40 km / 24 miles</option>
+              <option>50 km / 31 miles</option>
+</select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Meetup Frequency:</div>
+          <div class="lb_txtField">
+            <select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(9,'advSerHint',22);">
+              <option>Each week (1 – 3 hours)</option>
+              <option>Each week (4 – 6 hours)</option>
+              <option>Each week (7 or more hours</option>
+              <option>Each 2nd week (1 – 3 hours)</option>
+              <option>Each 2nd week (4 – 6 hours)</option>
+              <option>Each 2nd week (7 or more hours)</option>
+              <option>Each 3rd week (1 – 3 hours)</option>
+              <option>Each 3rd week (4 – 6 hours)</option>
+              <option>Each 3rd week (7 or more hours)</option>
+              <option>Each 4th week (1 – 3 hours)</option>
+              <option>Each 4th week (4 – 6 hours)</option>
+              <option>Each 4th week (7 or more hours)</option>
+              <option>Bimonthly</option>
+              <option>Occasionally / Not often</option>
+              <option>No Meetings</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Rating:</div>
+          <div class="lb_txtField">
+            <select name="" class="inputField" style="width:210px;" onfocus="showHideStuff(11,'advSerHint',22);">
+              <option>Select</option>
+              <option>1 Star</option>
+              <option>2 Stars</option>
+              <option>3 Stars</option>
+              <option>4 Stars</option>
+              <option>5 Stars</option>
+            </select>
+          </div>
+          <div class="clear7"></div>
+          <div class="lb_label">Project Start / End Dates:</div>
+          <div class="lb_txtField ">
+            <div class="floatL">
+              <input type="text" class="searchField" style="width:75px;" name="AnotherDateAStart" onfocus="showHideStuff(12,'advSerHint',22);" />
+              <a href="#"  onClick="displayDatePicker(&#39;AnotherDateAStart&#39;, this); showHideStuff(12,'advSerHint',22);" ><img src="images/icon_calender.gif" width="15" height="15" border="0" align="absmiddle" alt="" /></a>&nbsp;&nbsp; <span class="hint"><strong>Enter the Start / End Dates</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations<span class="hint-pointer">&nbsp;</span></span></div>
+            <div class="floatL">
+              <input type="text" class="searchField" style="width:75px;" name="AnotherDateAEnd" onfocus="showHideStuff(13,'advSerHint',22);" />
+              <a href="#"  onClick="displayDatePicker(&#39;AnotherDateAEnd&#39;, this); showHideStuff(13,'advSerHint',22);" ><img src="images/icon_calender.gif" width="15" height="15" border="0" align="absmiddle" alt="" /></a>&nbsp;&nbsp; <span class="hint"><strong>Enter the Start / End Dates</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations<span class="hint-pointer">&nbsp;</span></span></div>
+          </div>
+          <div class="clear15"></div>
+          <div class="lb_label">Project  Opportunities:</div>
+          <div class="lb_txtField">
+            <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(14,'advSerHint',22);" />
+            Virtual Projects<br />
+            <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(15,'advSerHint',22);" />
+            Completed Projects </div>
+          <div class="clear5"></div>
+          <div class="clear5"></div>
+          <div class="lb_label">Age Groups:</div>
+          <div class="lb_txtField">
+            <div class="floatL pR8">
+              <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(16,'advSerHint',22);" />
+              Kids<br />
+              <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(19,'advSerHint',22);"/>
+              Teens<br />
+            </div>
+            <div class="floatL pR8">
+              <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(17,'advSerHint',22);" />
+              Adults<br />
+              <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(20,'advSerHint',22);" />
+              Seniors<br />
+            </div>
+            <div class="floatL pR8">
+              <input name="" type="checkbox" style="margin-right:5px;" onfocus="showHideStuff(18,'advSerHint',22);" />
+              Groups<br />
+            </div>
+          </div>
+          <div class="clear15"></div>
+          <div class="lb_label">&nbsp;</div>
+          <div class="lb_txtField" style="text-align:right; width:220px; float:left;"><a class="button_green" href="#"><span style="text-align:center;">Search</span></a> <a class="button_black" href="#"><span style="text-align:center;">Cancel</span></a></div>
+        </div>
+        <div class="floatL" style="width:300px; padding-left:20px; border:solid 0px;">
+          <!-- HINT TEXT HERE -->
+          <div id="advSerHint1" class="hintText" style="display:block"> <strong>Search Text</strong><br />
+            Enter one or more keywords for your search. Enter each keyword separated by a comma (for example: civil rights, environment, poverty, homeless)</div>
+          <div id="advSerHint2" class="hintText"> <strong>Search for</strong><br />
+            Search for either volunteer projects, organizations or upcoming meetups</div>
+          <div id="advSerHint3" class="hintText"> <strong>Categories</strong><br />
+            Choose one or more of the predefined categories to narrow your search</div>
+          <div id="advSerHint4" class="hintText"> <strong>Language</strong><br />
+            Choose the language that you would like to search for</div>
+          <div id="advSerHint5" class="hintText"> <strong>Country</strong><br />
+            Select the country that you would like to search in</div>
+          <div id="advSerHint6" class="hintText"> <strong>State or Province</strong><br />
+            After selecting a country you can select the state or province (if available)</div>
+          <div id="advSerHint7" class="hintText"> <strong>City, Town or County</strong><br />
+            After selectng the country you can select the city, town or county (if available). <br />
+            <br />
+            <b>Note:</b> it is not possible to search for both city, town or county as well as the post / zip code</div>
+          <div id="advSerHint8" class="hintText"> <strong>Post or Zip Code</strong><br />
+            After selecting a country you can select a post or zip code for the search area. <br />
+            <br />
+            <b>Note:</b> it is not possible to search for both a post / zip code as as well as a state, province, city, town or county </div>
+          <div id="advSerHint9" class="hintText"> <strong>Meetup Frequency</strong><br />
+            Select the interval of how often you are able to participate in volunteer project meetups (meetings). The options are listed first in weeks and then in the number of hours in the week</div>
+          <div id="advSerHint10" class="hintText"> <strong>Enter the Volunteer Skills</strong><br />
+          </div>
+          <div id="advSerHint11" class="hintText"> <strong>Rating</strong><br />
+            Search for a star rating for a project or organization. 1 star is lowest rating while 5 stars is the highest rating</div>
+          <div id="advSerHint12" class="hintText"> <strong>Project Start / End Dates</strong><br />
+            Search for projects that fall within the start and end date range (note: it is also possible to enter only the start date or only the end date)</div>
+          <div id="advSerHint13" class="hintText"> <strong>Project Start / End Dates</strong><br />
+            Search for projects that fall within the start and end date range (note: it is also possible to enter only the start date or only the end date)</div>
+          <div id="advSerHint14" class="hintText"> <strong>Project Opportunities / Virtual Projects</strong><br />
+            Check this box if you are interested to search for projects that are 'virtual' or don't require you to participate or meetup at the project location. Virtual projects allow you to participate from any location (for example: from home or office)</div>
+          <div id="advSerHint15" class="hintText"> <strong>Project Opportunities / Completed Projects</strong><br />
+            Check this box if you would like to search for projects that are finished and completed</div>
+          <div id="advSerHint16" class="hintText"> <strong>Age Groups (Kids / Teens / Adults / Seniors / Groups)</strong><br />
+            Select one or more age groups that you are interested to search for</div>
+          <div id="advSerHint17" class="hintText"> <strong>Age Groups (Kids / Teens / Adults / Seniors / Groups)</strong><br />
+            Select one or more age groups that you are interested to search for</div>
+          <div id="advSerHint18" class="hintText"> <strong>Age Groups (Kids / Teens / Adults / Seniors / Groups)</strong><br />
+            Select one or more age groups that you are interested to search for</div>
+          <div id="advSerHint19" class="hintText"> <strong>Age Groups (Kids / Teens / Adults / Seniors / Groups)</strong><br />
+            Select one or more age groups that you are interested to search for</div>
+          <div id="advSerHint20" class="hintText"> <strong>Age Groups (Kids / Teens / Adults / Seniors / Groups)</strong><br />
+            Select one or more age groups that you are interested to search for</div>
+          <div id="advSerHint21" class="hintText"> <strong>Distance from Post or Zip Code</strong><br />
+            Select the distance from the post or zip code that you are interested to search for.  The dropdown selection is available in kilometers / miles (note: if the distance from post or zip code option is not selected then the search will only show results in the entered post or zip code if entered)</div>
+          <div id="advSerHint22" class="hintText"> <strong>Near Location</strong><br />
+            Enter the country, city, town, county OR post / zip code for where you would like to search</div>
+          <!-- HINT TEXT HERE -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ADVANCE SEARCH POPUP END -->
+<!-- MEETUPS POPUP START -->
+<div style="width:853px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="meetupscloseBtn" class="closeBtnFlash" style="margin-left:843px; margin-top:215px;"><a href = "javascript:void(0)" onclick = "document.getElementById('meetupslight').style.display='none'; document.getElementById('meetupscloseBtn').style.display='none'; document.getElementById('fade').style.display='none';"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="meetupslight" class="white_content" style="padding:10px; width:825px; height:440px; margin-top:220px; overflow:hidden;">
+    <div >
+      <div class="f16 bold ">Upcoming Meetups</div>
+      <div class="clear10"></div>
+      <div class="clear borderT"></div>
+      <div class="p10">
+        <div class="meetupColL">
+          <div class="calendar">
+            <div id="div3_example" style="width:205px; height:200px;"></div>
+            <div id="div3_example_result" style="height:20px; line-height:20px;"></div>
+          </div>
+          <div id="prodtlform" class="p20">
+            <div class="label" style="width:120px;">Country:</div>
+            <div class="txtField">
+              <select style="width:210px;" class="selectField">
+                <option>Select Group</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label" style="width:120px;">State or Province:</div>
+            <div class="txtField">
+              <select style="width:210px;" class="selectField">
+                <option>Select Group</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label" style="width:120px;">City, Town or county:</div>
+            <div class="txtField">
+              <select style="width:210px;" class="selectField">
+                <option>Select Group</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label" style="width:120px;">Post or Zip Code:</div>
+            <div class="txtField">
+              <input type="text" class="inputField" style="width:200px;" />
+            </div>
+            <div class="clear15"></div>
+            <div class="label" style="width:120px;">&nbsp;</div>
+            <div class="txtField">
+              <div class="floatL"><a class="button_green" href="javascript:void(0);"><span style="width:50px; text-align:center;">Search</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="meetupColR">
+          <div class="col250">
+            <div class="upComingHead">Upcoming meetups in Denmark <br />
+              <span class="f11"><a href="#">(Change your location)</a></span></div>
+            <div class="clear5"></div>
+            <div class="clear5"></div>
+            <div class="upCommingMeetup">
+              <div class="recUCE">
+                <div class="col1rec">MAY <span>16</span> 2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a> Event item text (H4) will be here </div>
+              </div>
+              <div class="recUCE">
+                <div class="col1rec">MAY <span>16</span> 2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a> Event item text (H4) will be here </div>
+              </div>
+              <div class="recUCE">
+                <div class="col1rec">MAY <span>16</span> 2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a> Event item text (H4) will be here </div>
+              </div>
+              <div class="clear"></div>
+              <div class="recUCE">
+                <div class="col1rec">MAY <span>16</span> 2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a> Event item text (H4) will be here </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MEETUPS POPUP END -->
+<!-- CREATE A PROJECT POPUP START -->
+<div style="width:903px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnCP1" class="closeBtnFlash" style="margin-left:893px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightCP1').style.display='none';document.getElementById('createAcPopB').style.display='none';document.getElementById('createAcPopC').style.display='none';document.getElementById('createAcPopD').style.display='none';document.getElementById('createAcPopE').style.display='none';document.getElementById('createAcPopF').style.display='none'; document.getElementById('fade').style.display='none';document.getElementById('closeBtnCP1').style.display='none'"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightCP1" class="white_content" style="padding:10px; width:875px; height:390px;">
+    <div id="loginBox" style="width:870px; border:solid 0px; display:table;">
+      <!-- CREATE A PROJECT POPUP A START -->
+      <div id="createAcPopA" style="display:block">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">New Project – Step 1 of 4</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10 floatL" style="border-right:solid 1px #ccc; width:500px;">
+            <div class="label">Project Name: <span class="required">*</span></div>
+            <div class="txtField">
+              <input name="proNameField" type="text" class="searchField" id="proNameField" style="width:245px;" onfocus="showHideStuff(1,'newProStpA',10);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Project Owner: <span class="required">*</span></div>
+            <div class="txtField">
+              <select name="proOwnerField" class="inputFieldSelect" id="proOwnerField" style="width:252px;" type="text" onfocus="showHideStuff(2,'newProStpA',10);">
+                <option>Private</option>
+                <option>Red Cross</option>
+                <option>Salvation Army</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Project Address1:</div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:245px;" onfocus="showHideStuff(3,'newProStpA',10);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Project Address2:</div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:245px;" onfocus="showHideStuff(4,'newProStpA',10);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Project Address3:</div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:245px;" onfocus="showHideStuff(5,'newProStpA',10);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Country: <span class="required">*</span></div>
+            <div class="txtField">
+              <select name="jumpMenu" class="" id="jumpMenu" style="width:252px;" type="text" onfocus="showHideStuff(6,'newProStpA',10);" >
+                <option> Select Country </option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Post or Zip Code <span class="required">*</span> <br />
+              City, Town or County: <span class="required">*</span></div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:67px;"  onfocus="showHideStuff(7,'newProStpA',10);"/>
+              <select name="Search" type="text" class="selectField" style="width:174px;" onfocus="showHideStuff(8,'newProStpA',10);">
+                <option>Select</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">State or Province:</div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:245px;" onfocus="showHideStuff(9,'newProStpA',10);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Project URL:</div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:245px;" onfocus="showHideStuff(10,'newProStpA',10);" />
+            </div>
+            <div class="clear10"></div>
+            <div><span class="required">* Required Fields</span></div>
+            <div class="clear10"></div>
+          </div>
+          <div class="floatL p10" style="width:300px; padding-top:10px; padding-left:20px; border:solid 0px;">
+            <div class="newProBtn">
+            
+              <div class="floatL">
+              
+              <a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopA').style.display='none'; document.getElementById('createAcPopB').style.display='block';">
+              
+              
+              <span style="width:50px; text-align:center;">Next</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+            </div>
+            <!-- HINT TEXT HERE -->
+            <div id="newProStpA1" class="hintText" style="display:block"> <strong>Project Name</strong><br />
+              Enter the project name. This name should be a short description of the project (for example: 'Help clean up Green Park', 'Volunteers needed to help plant trees') </div>
+            <div id="newProStpA2" class="hintText"> <strong>Project Owner</strong><br />
+              Select the project owner for the project. If you would like to register the ownership of the project in your name then select 'Private' from the dropdown box. If you would like to register the ownership of the project in behalf of an organization that you are the administrator / owner for then select the organization from the dropdown box (note: the organization must first be registered before you can link a project to an organization. See Register your Organization)</div>
+            <div id="newProStpA3" class="hintText"> <strong>Project Address</strong><br />
+              Enter the address for the project. If there is no permanent address for the project then do not enter an address. The project address is not the meetup address (a 'meetup' is a gathering of the project participants where details of the project are discussed. It will be possible to enter the meetup date and address once the project is created)</div>
+            <div id="newProStpA4" class="hintText"> <strong>Project Address</strong><br />
+              Enter the address for the project. If there is no permanent address for the project then do not enter an address. The project address is not the meetup address (a 'meetup' is a gathering of the project participants where details of the project are discussed. It will be possible to enter the meetup date and address once the project is created)</div>
+            <div id="newProStpA5" class="hintText"> <strong>Project Address</strong><br />
+              Enter the address for the project. If there is no permanent address for the project then do not enter an address. The project address is not the meetup address (a 'meetup' is a gathering of the project participants where details of the project are discussed. It will be possible to enter the meetup date and address once the project is created)</div>
+            <div id="newProStpA6" class="hintText"> <strong>Country</strong><br />
+              Enter the country where the project is based and where the project participants will be located</div>
+            <div id="newProStpA7" class="hintText"> <strong>Post or Zip Code </strong><br />
+              Enter the post or zip code where the project is based and where the project participants will be located</div>
+            <div id="newProStpA8" class="hintText"> <strong>City, Town or County</strong><br />
+              Enter the city, town or county where the project is based and where the project participants will be located</div>
+            <div id="newProStpA9" class="hintText"> <strong>State or Province</strong><br />
+              Enter the state or province where the project is based and where the project participants will be located</div>
+            <div id="newProStpA10" class="hintText"> <strong>Project URL</strong><br />
+              Enter the project’s URL or website address (if available)</div>
+            <!-- HINT TEXT HERE -->
+            <div class="clear10"></div>
+          </div>
+          <div class="clear25"></div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP A END -->
+      <!-- CREATE A PROJECT POPUP B START -->
+      <div id="createAcPopB" style="display:none">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">New Project – Step 2 of 4</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10 floatL" style="border-right:solid 1px #ccc; width:500px;">
+            <div class="label">Tag Words:</div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:245px;" onfocus="showHideStuff(1,'newProStpB',12);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Language: <span class="required">*</span></div>
+            <div class="txtField">
+              <select name="Search" type="text" class="inputFieldSelect" style="width:252px;" onfocus="showHideStuff(2,'newProStpB',12);">
+                <option>English</option>
+                <option>Spanish</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Project Start Date: <span class="required">*</span></div>
+            <div class="txtField bold">
+              <input type="text" class="searchField" style="width:105px;" name="AnotherDateA" onfocus="showHideStuff(3,'newProStpB',12);" />
+              <a href="#"  onClick="displayDatePicker(&#39;AnotherDateA&#39;, this); showHideStuff(3,'newProStpB',12);"><img src="images/icon_calender.gif" width="15" height="15" border="0" align="absmiddle" alt="" /></a>&nbsp;&nbsp; </div>
+            <div class="clear5"></div>
+            <div class="label">Project End Date (estimated): </div>
+            <div class="txtField bold">
+              <input type="text" class="searchField" style="width:105px;" name="AnotherDateB" onfocus="showHideStuff(4,'newProStpB',12);" />
+              <a href="#"  onClick="displayDatePicker(&#39;AnotherDateB&#39;, this); showHideStuff(4,'newProStpB',12);"><img src="images/icon_calender.gif" width="15" height="15" border="0" align="absmiddle" alt="" /></a>&nbsp;&nbsp; </div>
+            <div class="clear5"></div>
+            <div class="label">Meetup Frequency: <span class="required">*</span></div>
+            <div class="txtField">
+              <select name="Search" type="text" class="inputFieldSelect" style="width:252px;" onfocus="showHideStuff(5,'newProStpB',12);">
+                <option>Each week (1 – 3 hours)</option>
+                <option>Each week (4 – 6 hours)</option>
+                <option>Each week (7 or more hours</option>
+                <option>Each 2nd week (1 – 3 hours)</option>
+                <option>Each 2nd week (4 – 6 hours)</option>
+                <option>Each 2nd week (7 or more hours)</option>
+                <option>Each 3rd week (1 – 3 hours)</option>
+                <option>Each 3rd week (4 – 6 hours)</option>
+                <option>Each 3rd week (7 or more hours)</option>
+                <option>Each 4th week (1 – 3 hours)</option>
+                <option>Each 4th week (4 – 6 hours)</option>
+                <option>Each 4th week (7 or more hours)</option>
+                <option>Bimonthly</option>
+                <option>Occasionally / Not often</option>
+                <option>No Meetings</option>
+              </select>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Minimum Volunteer Age: <span class="required">*</span></div>
+            <div class="txtField">
+              <input name="Search" type="text" class="searchField" style="width:20px;" size="3" maxlength="3" onfocus="showHideStuff(6,'newProStpB',12);" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Age Group Target: <span class="required">*</span></div>
+            <div class="txtField">
+              <div style="float:left; margin-right:25px;">
+                <input name="Search" type="checkbox" onfocus="showHideStuff(7,'newProStpB',12);" />
+                Kids</div>
+              <div style="float:left; margin-right:25px;">
+                <input name="Search" type="checkbox" onfocus="showHideStuff(8,'newProStpB',12);" />
+                Adults</div>
+              <div style="float:left;">
+                <input name="Search" type="checkbox" onfocus="showHideStuff(11,'newProStpB',12);" />
+                Groups</div>
+              <div class="clear"></div>
+              <div style="float:left; margin-right:16px;">
+                <input name="Search" type="checkbox" onfocus="showHideStuff(9,'newProStpB',12);" />
+                Teens</div>
+              <div style="float:left">
+                <input name="Search" type="checkbox" onfocus="showHideStuff(10,'newProStpB',12);" />
+                Seniors</div>
+              <div class="clear10"></div>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Does this project include Virtual Project  Opportunities?:</div>
+            <div class="txtField">
+              <input name="Search" type="checkbox" onfocus="showHideStuff(12,'newProStpB',12);" />
+            </div>
+            <div class="clear15"></div>
+            <div><span class="required">* Required Fields</span></div>
+          </div>
+          <div class="floatL p10" style="width:300px; padding-top:10px; padding-left:20px;">
+            <div class="newProBtn">
+              <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopB').style.display='none'; document.getElementById('createAcPopA').style.display='block';"><span style="width:50px; text-align:center;">Back</span></a></div>
+              <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopB').style.display='none'; document.getElementById('createAcPopC').style.display='block';"><span style="width:50px; text-align:center;">Next</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+            </div>
+            <!-- HINT TEXT HERE -->
+            <div id="newProStpB1" class="hintText" style="display:block"> <strong>Tag Words</strong><br />
+              Tag words are one or two word combinations that can be used as additional descriptors for the project. This is useful to help users find your project when searching in DOalot by giving additional information about the project. Multiple tag words should be separated with a comma. For example: planting trees, graphic design, mentoring (note: this information is optional)</div>
+            <div id="newProStpB2" class="hintText"> <strong>Language</strong><br />
+              Enter the primary language that will be spoken and written during the project</div>
+            <div id="newProStpB3" class="hintText"> <strong>Project Start Date</strong><br />
+              Enter the starting date for the project</div>
+            <div id="newProStpB4" class="hintText"> <strong>Project End Date</strong><br />
+              Enter the actual or estimated project ending date. If the project is ongoing or continuing and doesn’t have an end date then don't fill in this field (note: the end date can be changed at any time during the project)</div>
+            <div id="newProStpB5" class="hintText"> <strong>Meetup Frequency</strong><br />
+              Enter the interval of how often project participants will be expected to gather and meet (note: the meetup frequency can be changed at any time during the project)</div>
+            <div id="newProStpB6" class="hintText"> <strong>Minimum Volunteer Age</strong><br />
+              Enter the minimum age requirement to participate in the project (note: make sure the Age Group Target (below) also represents this age minimum)</div>
+            <div id="newProStpB7" class="hintText"> <strong>Age Group - Kids</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations </div>
+            <div id="newProStpB8" class="hintText"> <strong>Age Group - Teens</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations </div>
+            <div id="newProStpB9" class="hintText"> <strong>Age Group - Adults</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations </div>
+            <div id="newProStpB10" class="hintText"> <strong>Age Group - Seniors</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations </div>
+            <div id="newProStpB11" class="hintText"> <strong>Age Group - Groups</strong><br />
+              Enter the owner of the project. For example, if the project is organized by yourself privately then select ‘Private’ from the dropdown box or else the relevant Organization if it is owned by one of your Organizations </div>
+            <div id="newProStpB12" class="hintText"> <strong>Virtual Project</strong><br />
+              Check this box if the project includes tasks that allow project participants to work remotely and not at the project location (for example: from home or office)</div>
+            <!-- HINT TEXT HERE -->
+            <div class="clear5"></div>
+          </div>
+          <div class="clear10"></div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP B END -->
+      <!-- CREATE A PROJECT POPUP C START -->
+      <div id="createAcPopC" style="display:none;">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">New Project – Step 3 of 4</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10 floatL" style="border-right:solid 1px #ccc; width:550px;">
+            <div class="clear5"></div>
+            <div class="txtField">
+              <div class="floatL pR15">
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Adults<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Alternative / Holistic<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Animals / Pets<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Arts &amp; Culture<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Community Development<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Counseling<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Disabled / Handicapped<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Disaster Relief<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Drugs &amp; Substance Abuse<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Education &amp; Literacy<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Environment &amp; Agriculture<br />
+                <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                Ethnic &amp; Race<br />
+              </div>
+              <div class="floatL pR15">
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Family<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Fundraising &amp; Charity<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Gay / Lesbian / Bi<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Government &amp; Politics<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Health &amp; Medical<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Homeless &amp; Poverty<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Housing Development<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Human &amp; Cival Rights<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                International<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Kids<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Legal Aid<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Men<br />
+              </div>
+              <div class="floatL pR8">
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Religion<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Science &amp; Technology<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Seniors / Elderly<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Social &amp; Welfare Services<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Spirituality<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Sports &amp; Recreation<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Teens<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Travel &amp; Tours<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Violence &amp; Abuse<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Women<br />
+              </div>
+            </div>
+          </div>
+          <div class="floatL p10" style="width:250px; padding-top:10px; padding-left:20px;">
+            <div class="newProBtn" style="margin-left:25px;">
+              <div class="floatL" style="margin-left:15px;"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopC').style.display='none'; document.getElementById('createAcPopB').style.display='block';"><span style="width:50px; text-align:center;">Back</span></a></div>
+              <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopC').style.display='none'; document.getElementById('createAcPopD').style.display='block';"><span style="width:50px; text-align:center;">Next</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+            </div>
+            <!-- HINT TEXT HERE -->
+            <div id="newProStpC1" class="hintText" style="display:block"> <strong>Select Project Categories: </strong><br />
+              Select a minimum of one category and a maximum of five (5) categories that best describes the project’s goals</div>
+            <div id="newProStpC2" class="hintText"> <strong>Project Description: this is a detailed </strong><br />
+              description of the project. It can also be thought of as the Purpose of the project. </div>
+            <div id="newProStpC3" class="hintText"> <strong>Volunteer Skill Requirements:</strong><br />
+              Skill Requirements of the project. It can also be thought of as the Purpose of the project.</div>
+            <!-- HINT TEXT HERE -->
+            <div class="clear5"></div>
+          </div>
+          <div class="clear15"></div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP C END -->
+      <!-- CREATE A PROJECT POPUP D START -->
+      <div id="createAcPopD" style="display:none">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">New Project – Step 4 of 4</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10 floatL" style="border-right:solid 1px #ccc; width:550px;">
+            <div>
+              <div><span class="f14 bold">Project  Mission:</span> <span class="required">*</span><br />
+                <textarea rows="4" style="width:530px;" onfocus="showHideStuff(1,'newProStpD',3);">
+Thousands of families around the world lose everything at different times and places to disaster. In those areas, we are establishing local IMPACT Ministries (www.citiimpact.org).                        
+                          </textarea>
+              </div>
+              <div class="clear10"></div>
+              <div><span class="f14 bold">Project  Description:</span><br />
+                <textarea rows="4" style="width:530px;" onfocus="showHideStuff(2,'newProStpD',3);">
+Thousands of families around the world lose everything at different times and places to disaster. In those areas, we are establishing local IMPACT Ministries (www.citiimpact.org) affiliates (or International Covenant Partners
+</textarea>
+              </div>
+              <div class="clear10"></div>
+              <div><span class="f14 bold">Volunteer Skill Requirements:</span> <span class="required">*</span><br />
+                <textarea rows="4" style="width:530px;" onfocus="showHideStuff(3,'newProStpD',3);">
+Thousands of families around the world lose everything at different times and places to disaster. In those areas, we are establishing local IMPACT Ministries (www.citiimpact.org). affiliates (or International Covenant Partners) 						
+</textarea>
+              </div>
+              <div class="clear15"></div>
+              <div><span class="required">* Required Fields</span></div>
+            </div>
+          </div>
+          <div class="floatL p10" style="width:260px; padding-top:10px; padding-left:20px;"> <span class="">
+            <div class="newProBtn" style="margin-left:20px;">
+              <div class="floatL" style="margin-left:0px;"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopD').style.display='none'; document.getElementById('createAcPopC').style.display='block';"><span style=" text-align:center;">Back</span></a></div>
+              <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('lightCP1').style.display='none';document.getElementById('closeBtnCP1').style.display='none'; document.getElementById('lightCP1IV').style.display='block';document.getElementById('closeBtnCP1IV').style.display='block'; document.getElementById('createAcPopD').style.display='none'; document.getElementById('createAcPopDb').style.display='block';"><span style="width:100px; text-align:center;">Create Project</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style=" text-align:center;">Cancel</span></a></div>
+            </div>
+            <!-- HINT TEXT HERE -->
+            </span>
+            <div class="hintText " id="newProStpD1" style="display:block"> <strong>Project Mission: </strong><br />
+              Enter the project's mission statement. This is a short summary of the project's goals which includes components such as values, vision, and purpose (note: this information is required) <br />
+              <br />
+              An example of a mission statement is: 'The Universal Project is a broad-based collaborative community initiative, assisting low-income mothers and their children to help themselves complete their education and achieve economic self-sufficiency through empowerment skills, access to affordable housing, child development services, health care, support services and meaningful employment. The Universal Project helps mothers and children to develop positive self-esteem and clarify their values on which to build a successful life' (note: this project mission statement is required and is limited to 500 characters) </div>
+            <div class="hintText " id="newProStpD2"> <strong>Project Description:</strong><br />
+              This is an expanded description of the mission statement (note: this information is optional)</div>
+            <div id="newProStpD3" class="hintText"> <span class=""><strong>Volunteer Skill Requirements:</strong><br />
+              Enter a brief description of the skills that you require for the project (note: this information is required) <br />
+              <br />
+              <b>Tip:</b> It’s a good idea to mention all the skills and tasks that are needed for the entire project </span></div>
+            <!-- HINT TEXT HERE -->
+            <div class="clear5"></div>
+          </div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP D END -->
+      <!-- CREATE A PROJECT POPUP E START -->
+      <div id="createAcPopE" style="display:none">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">Send an Invitation – Step 1 of 3</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10">
+            <div class="clear5"></div>
+            <div><strong>Please Note:</strong> An invitation will be sent to potential volunteers that match this project’s assigned categories <br />
+              (To view this project’s categories <a href="#">click here</a>) </div>
+            <div class="clear15"></div>
+            <div class="bgLtGray p10">
+              <div class="label" style="width:450px;">Select Distance from Project Post or Zip Code:<br />
+                <span class="smallText gray">(Select the distance from the project that you would like invite prospective volunteers)</span></div>
+              <div class="txtField">
+                <select name="" style="width:220px;">
+                  <option>Select</option>
+                </select>
+              </div>
+              <div class="clear5"></div>
+              <div class="bold">OR</div>
+              <div class="clear5"></div>
+              <div class="label" style="width:450px;">Select City, Town or County:</div>
+              <div class="txtField">
+                <select name="" style="width:220px;">
+                  <option>Select</option>
+                </select>
+              </div>
+            </div>
+            <div class="clear5"></div>
+            <div class="p10">
+              <div class="label" style="width:450px;">Invite members of 'My Network':</div>
+              <div class="txtField">
+                <input type="text" name="" class="inputField" style="width:216px;" />
+                &nbsp;<a href="javascript:void(0);" onClick="document.getElementById('myNetlight').style.display='block'; document.getElementById('myNetcloseBtn').style.display='block'; document.getElementById('fade').style.display='block';"><img src="images/dd_bullet_down.gif" width="9" height="8" border="0" alt="" /></a> </div>
+            </div>
+            <div class="clear5"></div>
+            <div class="p10">
+              <div class="label" style="width:450px;">Invite others to your project :<br />
+                <span class="smallText gray">(Enter email addresses separated by commas or semi-colons)</span></div>
+              <div class="txtField">
+                <input type="text" value="" style="width:216px;" />
+              </div>
+            </div>
+                        <div class="clear5"></div>
+            <div class="p10">
+              <div class="label" style="width:450px;">Send to Project Participations who have already received an invitation?</div>
+              <div class="txtField">
+                <select name="select">
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </div>
+            </div>
+            <div class="clear5"></div>
+            <div class="p10">
+              <div class="label" style="width:450px;">Import contacts from:<br />
+                <img src="images/icon_yahoo_s.gif" width="25" height="25" border="0" alt="" /> <img src="images/icon_gmail_s.gif" width="25" height="25" border="0" alt="" /> <img src="images/icon_windows_s.gif" width="25" height="25" border="0" alt="" /> <img src="images/icon_msn_s.gif" width="25" height="25" border="0" alt="" /> <img src="images/icon_aol_s.gif" width="25" height="25" border="0" alt="" /> <img src="images/icon_rmail_s.gif" width="25" height="25" border="0" alt="" /> <img src="images/icon_amail_s.gif" width="25" height="25" border="0" alt="" /></div>
+              <div class="txtField"><div class="txtField" style=" margin-top:9px;">
+              <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopE').style.display='none'; document.getElementById('createAcPopF').style.display='block';"><span style="width:50px; text-align:center;">Next</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+            </div></div>
+            </div>
+            <div class="clear5"></div>
+  </div>
+          <div class="clear15"></div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP E END -->
+      <!-- CREATE A PROJECT POPUP F START -->
+      <div id="createAcPopF" style="display:none">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">Send an Invitation – Step 2 of 3</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10">
+            <div class="clear5"></div>
+            <div class="label">Message:<br />
+              <span class="gray smallText">(2000 character limit)</span></div>
+            <div class="txtField">
+              <textarea name="richText" rows="15" style="width:400px;" type="text"></textarea>
+            </div>
+            <div class="clear5"></div>
+            <div class="label">Attach documents:<br />
+              <span class="gray smallText">(1 MB limit)</span></div>
+            <div class="txtField">
+              <input name="Search" type="file" style="width:245px;" />
+            </div>
+            <div class="clear5"></div>
+            <div class="label">&nbsp;</div>
+            <div class="txtField" style="margin-top:5px;">
+              <div class="floatL" style="margin-left:455px;"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopF').style.display='none'; document.getElementById('createAcPopE').style.display='block';"><span style="width:50px; text-align:center;">Back</span></a></div>
+              <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('createAcPopF').style.display='none'; document.getElementById('createAcPopG').style.display='block';"><span style="width:50px; text-align:center;">Next</span></a></div>
+              <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP G END -->
+      <!-- CREATE AN INVITATION POPUP E START -->
+      <div id="createAcPopG" style="display:none">
+        <div id="advSearchBoxa">
+          <div class="f16 bold ">Send an Invitation – Step 3 of 3</div>
+          <div class="clear10"></div>
+          <div class="clear10 borderT"></div>
+          <div id="prodtlform" class="p10">
+            <div class="previewMsgBox">
+              <div class="floatL"><img src="images/doalot_logo.jpg" width="141" height="120" border="0" alt="DOalot" /></div>
+              <div class="floatR" style="text-align:right;"><img src="images/icon_pagerR.gif" width="12" height="12" border="0" alt="" /> <a href="#">Add to my outlook calendar</a><br />
+                <strong>Meeting Details:</strong><br />
+                80-46 223rd Street - Hollis Hills, New York<br />
+                Saturday, 19 September @ 0700 - 2200</div>
+              <div class="clear"></div>
+              Hey everyone out there!!<br />
+              <br />
+              I'm starting a project for the homeless and I need your help.  We're looking for some dedicated people who could help us distribute food and used clothes once per month.  We meet on the first Sunday of the month and it takes about 3 hours.  Could you be interested to help another person in need.<br />
+              <br />
+              Come and share yourself and meet other interesting people at the same time.<br />
+              Click on the link in this email...<br />
+              Green Cross </div>
+            <div class="attachmentBox">
+              <div class="attachments"><span class="f12 bold">Attachments:</span><br />
+                <br />
+                <img src="images/icon_word.gif" width="16" height="16" border="0" align="absmiddle" alt="" /> Meeting.doc</div>
+              <div class="clear15"></div>
+              <div><a class="button_black" href="javascript:void(0);" onclick = "document.getElementById('createAcPopG').style.display='none'; document.getElementById('createAcPopF').style.display='block';"><span style="width:50px; text-align:center;">Back</span></a> <a class="button_green" href="javascript:void(0);"><span style="width:50px; text-align:center;">Send</span></a></div>
+              <div class="clear5"></div>
+              <div>
+                <div class="floatL"><a class="button_black" href="javascript:void(0);" onclick = "document.getElementById('createAcPopG').style.display='none'; document.getElementById('createAcPopF').style.display='block';"><span style="width:50px; text-align:center;">Edit</span></a></div>
+                <div class="floatL"><a class="button_black" href="javascript:void(0);"onclick = "document.getElementById('lightCP1').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnCP1').style.display='none'"><span style="width:50px; text-align:center;">Cancel</span></a></div>
+              </div>
+            </div>
+            <div class="clear5"></div>
+            <div>Include <a href="#">Map</a> of the project address in the invitation
+              <input name="" type="checkbox" value="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CREATE AN INVITATION POPUP G END -->
+    </div>
+  </div>
+</div>
+<div style="width:443px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnCP1IV" class="closeBtnFlash" style="margin-left:433px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightCP1IV').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnCP1IV').style.display='none'"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightCP1IV" class="white_content" style="padding:10px; width:415px; height:200px;">
+    <div id="loginBox" style="width:410px; border:solid 0px; display:table;">
+      <!-- CREATE A PROJECT POPUP Db START -->
+      <div id="createAcPopDb" style="display:none">
+        <div id="advSearchBoxa">
+          <div class="clear20"></div>
+          <div id="prodtlform" class="p10 floatL" style="padding-left:20px;">
+            <div class="clear15"></div>
+            <div class="f18" style="text-align:center; margin-left:55px;">Would you like to invite <br />
+              participants to join your project?</div>
+            <div class="clear20"></div>
+            <div class="txtField">
+              <div class="floatL" style=" margin-left:70px;"><a class="button_go" href="javascript:void(0);" onclick = "document.getElementById('lightCP1IV').style.display='none'; document.getElementById('closeBtnCP1IV').style.display='none';       document.getElementById('lightCP1').style.display='block'; document.getElementById('closeBtnCP1').style.display='block';  document.getElementById('createAcPopE').style.display='block';"><span style="width:30px; text-align:center;">Yes</span></a></div>
+              <div class="floatL"><a class="button_goBlk" href="javascript:void(0);"><span style="width:150px; text-align:center; text-transform:none;">NO, not at this time</span></a></div>
+            </div>
+          </div>
+          <div class="clear10"></div>
+        </div>
+      </div>
+      <!-- CREATE A PROJECT POPUP Db END -->
+    </div>
+  </div>
+</div>
+<!-- CREATE A PROJECT POPUP END -->
+<!-- MY NETWORK POPUP START -->
+<div style="width:653px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="myNetcloseBtn" class="closeBtnFlash" style="margin-left:643px; margin-top:315px;"><a href = "javascript:void(0)" onclick = "document.getElementById('myNetlight').style.display='none'; document.getElementById('myNetcloseBtn').style.display='none';"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="myNetlight" class="white_content" style="padding:10px; width:625px; height:330px; margin-top:320px; overflow:hidden;">
+    <div id="loginBox" style="width:620px; border:solid 0px; display:table;">
+      <!-- MY NETWORK POPUP A START -->
+      <div id="myNetPopA" style="display:block;">
+        <div id="proBox">
+          <div class="">
+            <!-- DESHBOARD START -->
+            <div id="profileDesh">
+              <div><span class="bold f16">My Network</span> <span class="floatR smallText" style="text-align:right; height:25px;"> <a href="javascript:void(0);" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', true);">Check All</a> &nbsp;|&nbsp; <a href="javascript:void(0);" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', false);">Uncheck All</a> &nbsp;|&nbsp; <a href="javascript:void(0);" onClick="document.getElementById('catBaloon2').style.display='none';">Apply</a> </span> </div>
+              <div class="clear10"></div>
+              <div class="">
+                <div class="sortBar">
+                  <div class="sortBardiv" style="width:620px;">
+                    <div class="floatL" style=" line-height:24px; width:120px;">
+                      <div class="floatL bold pL8">View By:&nbsp;&nbsp;</div>
+                      <UL class="itemViewTab" id="countrytabs" style="padding:0px; margin:0px;">
+                        <LI><A class="selected" href="javascript:void(0);" rel="country1"><img src="images/icon_list.gif" alt="List View" name="listView" width="17" height="17" border="0" id="listView2" /></A>
+                        <LI><A href="javascript:void(0);" rel="country2"><img src="images/icon_group.gif" alt="Thumbnail View" name="thumbview" width="17" height="17" border="0" id="thumbview" /></A>
+                      </UL>
+                    </div>
+                    <div class="floatL pL10" style="font-size:11px; padding-right:5px;"> <strong>Sort By:</strong>
+                      <select name="jumpMenu2" id="jumpMenu2" onchange="MM_jumpMenu('parent',this,0)" class="inputFieldSelect">
+                        <option value="orgSearchResults.html">Distance</option>
+                        <option value="orgSearchResults.html">Meetup Date</option>
+                        <option value="orgSearchResults.html">Most Popular</option>
+                        <option value="orgSearchResults.html">Relevance</option>
+                        <option value="orgSearchResults.html">Last Updated</option>
+                      </select>
+                    </div>
+                    <div class="floatL pL10" style="border:solid 0px #000;"> <img src="images/icon_pagerL_dis.gif" width="12" height="12" align="absmiddle" alt="" /> page
+                      <input type="text" value="1" size="1" class="inputField" style="font-size:11px;" />
+                      of 2 <img src="images/icon_pagerR.gif" width="12" height="12" align="absmiddle" alt="" />&nbsp;&nbsp; </div>
+                    <div class="floatR pL10"> Results per page
+                      <select name="jumpMenu3" id="jumpMenu3" onchange="MM_jumpMenu('parent',this,0)" class="inputFieldSelect">
+                        <option value="orgSearchResults.html">10</option>
+                        <option value="orgSearchResults.html">20</option>
+                        <option value="orgSearchResults.html">50</option>
+                        <option value="orgSearchResults.html">100</option>
+                      </select>
+                      &nbsp; </div>
+                  </div>
+                </div>
+                <!-- TAB CONTENT START HERE  -->
+                <div style="text-align:left;">
+                  <DIV style="BORDER: #ccc 1px solid; WIDTH: 620px; text-align:left; float:left; margin:0px; height:250px; overflow-y:scroll;">
+                    <DIV class="tabcontent" id="country1">
+                      <!-- LIST VIEW START HERE -->
+                      <div id="listView">
+                        <!-- Content Item start -->
+                        <div id="content1">
+                          <div class="p10">
+                            <div class="accordian1">
+                              <div id="dataRecord3">
+                                <div class="userImg">&nbsp;</div>
+                                <div class="nickname"><a href="#" class="bold">Nickname</a></div>
+                                <div class="joinDate"><a href="#" class="bold">Joined</a></div>
+                                <div class="address"><a href="#" class="bold">Country &amp; City </a> </div>
+                                <div class="MeetupFrequency"><a href="#" class="bold">Meetup Frequency</a></div>
+                                <div class="category" style="width:95px; border:solid 0px; float:left;"><a href="#" class="bold">Categories</a></div>
+                                <div class="myGroup" style="width:65px; border:solid 0px; float:left;">&nbsp;</div>
+                                <div class="clear"></div>
+                              </div>
+                              <div class="clear5"></div>
+                              <div id="dataRecord3">
+                                <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60  />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout="UnTip()" href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                <div class="nickname">John S</div>
+                                <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                <div class="address">Denmark <br />
+                                  Cocenhaoen</div>
+                                <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                  <input type="checkbox" />
+                                </div>
+                              </div>
+                              <div class="clear"></div>
+                              <div class="clear5"></div>
+                              <div id="dataRecord3">
+                                <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout="UnTip()" href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                <div class="nickname">John S</div>
+                                <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                <div class="address">Denmark <br />
+                                  Cocenhaoen</div>
+                                <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                  <input type="checkbox" />
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                              <div class="clear5"></div>
+                              <div id="dataRecord3">
+                                <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                <div class="nickname">John S</div>
+                                <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                <div class="address">Denmark <br />
+                                  Cocenhaoen</div>
+                                <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                  <input type="checkbox" />
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                              <div class="clear5"></div>
+                              <div class="clear"></div>
+                            </div>
+                            <div class="accordian1">
+                              <div id="dataRecord3">
+                                <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" alt="" /></A></div>
+                                <div class="nickname">John S</div>
+                                <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                <div class="address">Denmark <br />
+                                  Cocenhaoen</div>
+                                <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                  <input type="checkbox" />
+                                </div>
+                              </div>
+                              <div class="clear"></div>
+                              <div class="clear5"></div>
+                              <div id="dataRecord3">
+                                <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" alt="" /></A></div>
+                                <div class="nickname">John S</div>
+                                <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                <div class="address">Denmark <br />
+                                  Cocenhaoen</div>
+                                <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                  <input type="checkbox" />
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                              <div class="clear5"></div>
+                              <div id="dataRecord3">
+                                <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" alt="" /></A></div>
+                                <div class="nickname">John S</div>
+                                <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                <div class="address">Denmark <br />
+                                  Cocenhaoen</div>
+                                <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                  <input type="checkbox" />
+                                </div>
+                                <div class="clear"></div>
+                              </div>
+                              <div class="clear5"></div>
+                              <div class="clear"></div>
+                            </div>
+                            <div class="clear10"></div>
+                          </div>
+                        </div>
+                        <div class="clear"></div>
+                        <!-- Content Item end -->
+                      </div>
+                    </DIV>
+                    <!-- LIST VIEW END HERE -->
+                    <DIV class=tabcontent id=country2>
+                      <!-- THUMB VIEW START HERE -->
+                      <div id="listView">
+                        <!-- Content Item start -->
+                        <div id="content1">
+                          <div class="p10">
+                            <div class="accordian1">
+                              <div class="myNetworkTab" style="border:solid 0px #000;">
+                                <p id="myNetwork1_expande" style="display:block;" class="myNetworkUp"><a href="javascript: toggleMenu(19);" class="blackLink"><b><img src="images/expand.png" width="16" height="16" border="0" align="absmiddle" alt="" /> Group 1
+                                  <input type="checkbox" />
+                                  </b></a></p>
+                                <p id="myNetwork1_close" style="display:none;" class="myNetworkUp"><a href="javascript: toggleMenu(19);" class="blackLink"><b><img src="images/minimize.png" width="16" height="16" border="0"  align="absmiddle" alt="" /> Group 1
+                                  <input type="checkbox" />
+                                  </b></a></p>
+                              </div>
+                              <div class="clear"></div>
+                              <div  id="myNetwork1" style="display:none; !important; border:solid 0px #ccc; margin:0px; margin-top:-1px;">
+                                <div id="dataRecord3">
+                                  <div class="userImg">&nbsp;</div>
+                                  <div class="nickname"><a href="#" class="bold">Nickname</a></div>
+                                  <div class="joinDate"><a href="#" class="bold">Joined</a></div>
+                                  <div class="address"><a href="#" class="bold">Country &amp; City </a> </div>
+                                  <div class="MeetupFrequency"><a href="#" class="bold">Meetup Frequency</a></div>
+                                  <div class="category" style="width:95px; border:solid 0px; float:left;"><a href="#" class="bold">Categories</a></div>
+                                  <div class="myGroup" style="width:65px; border:solid 0px; float:left;">&nbsp;</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="clear5"></div>
+                                <div id="dataRecord3">
+                                  <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" alt="" /></A></div>
+                                  <div class="nickname">John S</div>
+                                  <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                  <div class="address">Denmark <br />
+                                    Cocenhaoen</div>
+                                  <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                  <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                  <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                    <input type="checkbox" />
+                                  </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="clear5"></div>
+                                <div id="dataRecord3">
+                                  <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" alt="" /></A></div>
+                                  <div class="nickname">John S</div>
+                                  <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                  <div class="address">Denmark <br />
+                                    Cocenhaoen</div>
+                                  <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                  <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                  <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                    <input type="checkbox" />
+                                  </div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="clear5"></div>
+                                <div id="dataRecord3">
+                                  <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                  <div class="nickname">John S</div>
+                                  <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                  <div class="address">Denmark <br />
+                                    Cocenhaoen</div>
+                                  <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                  <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                  <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                    <input type="checkbox" />
+                                  </div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="clear5"></div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="seprator"></div>
+                            <div class="accordian1">
+                              <div class="myNetworkTab" style="border:solid 0px #000;">
+                                <p id="myNetwork2_expande" style="display:block;" class="myNetworkUp"><a href="javascript: toggleMenu(20);" class="blackLink"><b><img src="images/expand.png" width="16" height="16" border="0" align="absmiddle" alt="" /> Group 2
+                                  <input type="checkbox" />
+                                  </b></a></p>
+                                <p id="myNetwork2_close" style="display:none;" class="myNetworkUp"><a href="javascript: toggleMenu(20);" class="blackLink"><b><img src="images/minimize.png" width="16" height="16" border="0"  align="absmiddle" alt="" /> Group 2
+                                  <input type="checkbox" />
+                                  </b></a></p>
+                              </div>
+                              <div class="clear"></div>
+                              <div  id="myNetwork2" style="display:none; !important; border:solid 0px #ccc; margin:0px; margin-top:-1px;">
+                                <div id="dataRecord3">
+                                  <div class="userImg">&nbsp;</div>
+                                  <div class="nickname"><a href="#" class="bold">Nickname</a></div>
+                                  <div class="joinDate"><a href="#" class="bold">Joined</a></div>
+                                  <div class="address"><a href="#" class="bold">Country &amp; City </a> </div>
+                                  <div class="MeetupFrequency"><a href="#" class="bold">Meetup Frequency</a></div>
+                                  <div class="category" style="width:95px; border:solid 0px; float:left;"><a href="#" class="bold">Categories</a></div>
+                                  <div class="myGroup" style="width:65px; border:solid 0px; float:left;">&nbsp;</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="clear5"></div>
+                                <div id="dataRecord3">
+                                  <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                  <div class="nickname">John S</div>
+                                  <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                  <div class="address">Denmark <br />
+                                    Cocenhaoen</div>
+                                  <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                  <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                  <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                    <input type="checkbox" />
+                                  </div>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="clear5"></div>
+                                <div id="dataRecord3">
+                                  <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                  <div class="nickname">John S</div>
+                                  <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                  <div class="address">Denmark <br />
+                                    Cocenhaoen</div>
+                                  <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                  <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                  <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                    <input type="checkbox" />
+                                  </div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="clear5"></div>
+                                <div id="dataRecord3">
+                                  <div class="userImg"><A onMouseOver="Tip('<img src=images/user1.jpg width=60 height=60 />', WIDTH, 60, PADDING, 6, BGCOLOR, '#ffffff')" onmouseout=UnTip() href="javascript:void(0);"><img src="images/user1.jpg" alt="gallery thumbnail" width="20" height="20" border="0" /></A></div>
+                                  <div class="nickname">John S</div>
+                                  <div class="joinDate"><a href="#" class="blackLink">21 Dec 09</a></div>
+                                  <div class="address">Denmark <br />
+                                    Cocenhaoen</div>
+                                  <div class="MeetupFrequency">weekly (1-3 hours)</div>
+                                  <div class="category" style="width:115px; float:left;">Environment, Children, Civil Rights, Government</div>
+                                  <div class="myGroup" style="width:25px; text-align:center; float:left;">
+                                    <input type="checkbox" />
+                                  </div>
+                                  <div class="clear"></div>
+                                </div>
+                                <div class="clear5"></div>
+                                <div class="clear"></div>
+                              </div>
+                            </div>
+                            <div class="clear10"></div>
+                          </div>
+                        </div>
+                        <div class="clear"></div>
+                        <!-- Content Item end -->
+                      </div>
+                      <!-- THUMB VIEW END HERE -->
+                    </DIV>
+                  </DIV>
+                </DIV>
+                <script type=text/javascript>
+            var countries=new ddtabcontent("countrytabs")
+            countries.setpersist(true)
+            countries.setselectedClassTarget("link") //"link" or "linkparent"
+            countries.init()
+            </script>
+              </div>
+              <!-- TAB CONTAINT END HERE -->
+            </div>
+          </div>
+          <!-- DESHBOARD START -->
+          <!-- DESHBOARD START -->
+          <div></div>
+          <!-- DESHBOARD START -->
+        </div>
+      </div>
+    </div>
+    <!-- MY NETWORK POPUP A END -->
+  </div>
+</div>
+<!-- MY NETWORK POPUP END -->
+<!-- DONATE POPUP START -->
+<div style="width:643px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnDonate" class="closeBtnFlash" style="margin-left:633px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightSignUp').style.display='none';document.getElementById('lightSignin').style.display='none';document.getElementById('lightDonate').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnSignin').style.display='none';document.getElementById('closeBtnSignUp').style.display='none';document.getElementById('closeBtnDonate').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightDonate" class="white_content" style="padding:10px;width:615px; height:260px;">
+    <div id="loginBox" style="height:380px;">
+      <div class="f16 bold ">Make a Donation</div>
+      <div class="clear10"></div>
+      <div class="clear borderT"></div>
+      <div class="p10">
+        <div> DOalot Volunteer Organization is a not for profit organization that relies solely on private donations to continue the development of our website as well as to support our global network of volunteers and organizations. <br />
+          <br />
+          Your donation supports your local community by helping to create volunteer projects as well as helping to build a solid foundation for communities around the world. <br />
+          <br />
+          <strong>Thank you for your support...</strong> <br />
+          <br />
+          How much would you like to donate?&nbsp;
+          <input name="" type="text" class="inputField" style="width:40px;" />
+          &nbsp;
+          <select>
+            <option>$(USD)</option>
+            <option>15 Euros</option>
+            <option>25 Euros</option>
+            <option>35 Euros</option>
+            <option>50 Euros</option>
+            <option>100 Euros</option>
+            <option>Other Amount (Euros)</option>
+          </select>
+          <div class="clear15"></div>
+          <div>
+            <div class="floatL" style="margin-left:220px;"><a class="button_green" href="#" onclick="document.getElementById('lightDonate2').style.display='block';document.getElementById('lightDonate').style.display='none';document.getElementById('fade').style.display='block';document.getElementById('closeBtnDonate2').style.display='block';document.getElementById('closeBtnDonate').style.display='none';"><span style="text-align:center;">CONTINUE</span></a></div>
+            <div class="floatL"><a class="button_black" href="#" ><span style="text-align:center;">CANCEL</span></a></div>
+          </div>
+        </div>
+        <div class="clear10"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- DONATE POPUP END -->
+<!-- DONATE2 POPUP START -->
+<div style="width:813px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnDonate2" class="closeBtnFlash" style="margin-left:803px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightDonate2').style.display='none';document.getElementById('lightSignin').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnDonate2').style.display='none';document.getElementById('closeBtnSignUp').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightDonate2" class="white_content" style="padding:10px;width:785px; height:610px;">
+    <div id="loginBox" style="border:solid 0px;">
+      <div class="f16 bold ">Donate by Credit Card or PayPal</div>
+      <div class="clear10"></div>
+      <div class="clear10 borderT"></div>
+      <div class="floatL borderR p10" style="width:450px;">
+        <div><a href = "javascript:void(0)">Learn more</a> about PayPal – the safer, easier way to pay.</div>
+        <div class="clear10"></div>
+        <div class="bold">Enter your billing information</div>
+        <div class="clear10"></div>
+        <div class="lb_label" style="width:180px;">Country:</div>
+        <div class="lb_txtField">
+          <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" type="text" class="" style="width:228px;">
+            <option> Select Country </option>
+          </select>
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">First Name:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Last Name:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Credit Card Number:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Payment Type:</div>
+        <div class="lb_txtField"> <img src="images/visa_thumb.gif" width="39" height="25" alt="" /> &nbsp; <img src="images/master_thumb.gif" width="39" height="25" alt="" /> &nbsp; <img src="images/discover_thumb.gif" width="39" height="25" alt="" /> &nbsp; <img src="images/amex_thumb.gif" width="39" height="25" alt="" /> </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Expiration Date:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:25px;" value="mm" />
+          /
+          <input name="Search" type="text" class="searchField" style="width:25px;" value="dd" />
+          /
+          <input name="Search" type="text" class="searchField" style="width:60px;" value="yyyy" />
+          <a href="#">What’s this?</a> </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Billing Address Line 1:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Billing Address Line 2:<br />
+          <span class="gray smallText">(optional)</span></div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">City:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Province:</div>
+        <div class="lb_txtField">
+          <select name="jumpMenu" type="text" class="" style="width:228px;">
+            <option> Select Province </option>
+          </select>
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Postal Code:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Home Telephone:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear5"></div>
+        <div class="lb_label" style="width:180px;">Email:</div>
+        <div class="lb_txtField">
+          <input name="Search" type="text" class="searchField" style="width:220px;" />
+        </div>
+        <div class="clear10"></div>
+        <div class="lb_label" style="width:180px;">Email:</div>
+        <div class="lb_txtField">
+          <div class="floatL"><a class="button_green" href="#" onclick="document.getElementById('lightDonate2').style.display='block';document.getElementById('lightDonate').style.display='none';document.getElementById('fade').style.display='block';document.getElementById('closeBtnDonate2').style.display='block';document.getElementById('closeBtnDonate').style.display='none';"><span style="text-align:center;">CONTINUE</span></a></div>
+          <div class="floatL"><a class="button_black" href="#" ><span style="text-align:center;">CANCEL</span></a></div>
+        </div>
+        <div class="clear10"></div>
+      </div>
+      <div class="floatL pL10" style="border:solid 0px;">
+        <div class="p10">
+          <div><img src="images/payPal_securePayment.gif" width="213" height="37" alt="" /></div>
+          <div class="clear10"></div>
+          <div><a href="#">Already have a PayPal account?</a></div>
+          <div class="clear10"></div>
+          <div class="p10" style="border:solid 3px #666666; width:240px; display:table;">
+            <div class="clear10"></div>
+            <div class="bold">PayPal Login</div>
+            <div class="clear10"></div>
+            <div class="clear10 borderT"></div>
+            <div class="lb_label" style="width:70px;">Email:</div>
+            <div class="lb_txtField">
+              <input name="Search" type="text" class="searchField" style="width:135px;" />
+            </div>
+            <div class="clear5"></div>
+            <div class="lb_label" style="width:70px;">Password:</div>
+            <div class="lb_txtField">
+              <input name="Search" type="password" class="searchField" style="width:135px;" />
+            </div>
+            <div class="clear5"></div>
+            <div class="lb_label" style="width:70px;">&nbsp;</div>
+            <div class="lb_txtField"><a class="button_green" href="javascript:void(0);"><span style="text-align:center;">Login</span></a></div>
+            <div class="clear10"></div>
+            <div>Forgot <a href="#">email address</a> or <a href="#">password</a>?</div>
+            <div class="clea5"></div>
+          </div>
+          <div class="clear10"></div>
+          <div class="p10" style="border:solid 3px #666666; width:240px; display:table;">
+            <div class="clear10"></div>
+            <div class="bold">Money Bookers Login</div>
+            <div class="clear10"></div>
+            <div class="clear10 borderT"></div>
+            <div class="lb_label" style="width:90px;">Email:</div>
+            <div class="lb_txtField">
+              <input name="Search" type="text" class="searchField" style="width:110px;" />
+            </div>
+            <div class="clear5"></div>
+            <div class="lb_label" style="width:90px;">Password:</div>
+            <div class="lb_txtField">
+              <input name="Search" type="password" class="searchField" style="width:110px;" />
+            </div>
+            <div class="clear5"></div>
+            <div class="lb_label" style="width:90px;">Turing number:</div>
+            <div class="lb_txtField">
+              <input name="Search" type="text" class="searchField" style="width:110px;" />
+              <div class="clear5"></div>
+            </div>
+            <div class="lb_txtField" style="width:140px;"> <img src="images/turing.pl.gif" width="140" height="40" alt="" /> </div>
+            <div class="clear5"></div>
+            <div class="lb_txtField"><a class="button_green" href="javascript:void(0);"><span style="text-align:center;">Login</span></a></div>
+            <div class="clear10"></div>
+            <div>Forgot <a href="#">email address</a> or <a href="#">password</a>?</div>
+            <div class="clear10"></div>
+          </div>
+          <div class="clear15"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- DONATE2 POPUP END -->
+<!-- SIGNIN POPUP START -->
+<div style="width:443px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnSignin" class="closeBtnFlash" style="margin-left:423px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightSignUp').style.display='none';document.getElementById('lightSignin').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnSignin').style.display='none';document.getElementById('closeBtnSignUp').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightSignin" class="white_content" style="padding:10px;width:405px; height:160px;">
+    <div id="loginBox" style="height:190px;">
+      <div class="">
+        <div class="f16 bold ">Login<span style="float:right;"><a href="#"><img src="images/fb_login_icon.gif" width="154" height="22" border="0" /></a></span></div>
+        <div class="clear10"></div>
+        <div class="clear10 borderT"></div>
+        <div style="padding-left:20px; border:solid 0px; margin:0px">
+          <div class="lb_txtField">Not a member? <a href = "javascript:void(0)" onclick = "document.getElementById('lightSignin').style.display='none';document.getElementById('lightSignUp').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnSignUp').style.display='block';document.getElementById('closeBtnSignin').style.display='none'">Join now </a>&nbsp;</div>
+          <div class="clear10"></div>
+          <div class="lb_label">Login:</div>
+          <div class="lb_txtField">
+            <input type="text" name="" class="searchField" style="width:250px; color:#bbbbbb; font-style:italic; font-size:11px;" value="Enter nickname OR email address" />
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label">Password:</div>
+          <div class="lb_txtField">
+            <div class="floatL">
+              <input name="" type="text" class="inputField" style="margin-right:5px; width:120px;" />
+            </div>
+            <div class="floatL"><a class="button_green" href="javascript:void(0);"><span style="text-align:center;">LogIn</span></a> <a class="button_black" href="javascript:void(0);" id="close"><span style="text-align:center;">Cancel</span></a></div>
+          </div>
+          <div class="clear10"></div>
+          <div class="lb_label">&nbsp;</div>
+          <div class="lb_txtField"><a href="#">Forgot Password?</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SIGNIN POPUP END -->
+<!-- SIGNUP POPUP START -->
+<div style="width:943px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnSignUp" class="closeBtnFlash" style="margin-left:933px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightSignUp').style.display='none';document.getElementById('lightSignin').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnSignin').style.display='none';document.getElementById('closeBtnSignUp').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightSignUp" class="white_content" style="padding:10px; width:915px; height:490px;">
+    <div id="loginBox" style="width:910px; border:solid 0px; display:table;">
+      <div id="signupForm" style="border:solid 0px;">
+        <div class="f16 bold ">Create a DOalot Account<span style="float:right;"><a href="#"><img src="images/fb_login_icon.gif" width="154" height="22" border="0" /></a></span></div>
+        <div class="clear10"></div>
+        <div class="clear0 borderT"></div>
+        <div class="login borderR" style="width:400px;">
+          <div>Already a member? <a href = "javascript:void(0)" onclick = "document.getElementById('lightSignUp').style.display='none';document.getElementById('lightSignin').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnSignin').style.display='block';document.getElementById('closeBtnSignin').style.display='none'">Login</a>&nbsp;</div>
+          <div class="clear10"></div>
+          <div class="clear10"></div>
+          <div class="lb_label" style="width:150px;">First and Last Name:</div>
+          <div class="lb_txtField">
+            <input name="Search" type="text" class="searchField" style="width:92px;" />
+            <input name="Search" type="text" class="searchField" style="width:97px;" />
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Nickname:</div>
+          <div class="lb_txtField">
+            <input name="Search" type="text" class="searchField" style="width:200px;" />
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Email (login):</div>
+          <div class="lb_txtField">
+            <input name="Search" type="text" class="searchField" style="width:200px;" />
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Password:</div>
+          <div class="lb_txtField">
+            <input name="Search" type="password" class="searchField" style="width:200px;" />
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Confirm Password:</div>
+          <div class="lb_txtField">
+            <input name="Search" type="password" class="searchField" style="width:200px;" />
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Country:</div>
+          <div class="lb_txtField">
+            <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)" type="text" class="" style="width:208px;">
+              <option> Select Country </option>
+            </select>
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Post or Zip Code / <br />
+            City, Town or County:</div>
+          <div class="lb_txtField">
+            <input name="Search" type="text" class="searchField" style="width:67px;" />
+            <select name="Search" type="text" class="selectField" style="width:129px;">
+              <option>Select</option>
+            </select>
+          </div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Upload Photo:</div>
+ 			<div class="lb_txtField">
+            <input type="file" style="width:210px;" size="18" /></div>
+          <div class="clear5"></div>
+          <div class="lb_label" style="width:150px;">Language Preference:</div>
+          <div class="lb_txtField">
+            <select name="Search" type="text" class="" style="width:208px;" />
+            
+            <option>English</option>
+            <option>Spanish</option>
+            </select>
+          </div>
+          <div class="clear10"></div>
+          <div class="lb_label" style="width:25px;">
+            <input name="Search" type="checkbox" />
+          </div>
+          <div class="lb_txtField" style="width:300px;"> Yes, email me about projects in my area<br />
+            <span class="smallText"> We never spam, sell or distribute your private information 
+            to other parties. Read our <a href="#">Privacy Policy</a> for more details </span> </div>
+          <div class="clear10"></div>
+          <div class="lb_label" style="width:25px;">
+            <input name="Search" type="checkbox" />
+          </div>
+          <div class="lb_txtField" style="width:300px;"> I understand, agree and accept the terms of the <a href="#">Doalot User Agreement</a> </div>
+          <div class="clear15"></div>
+          <div style="display:table; margin:0 auto; width:215px; border:solid 0px;">
+            <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('lightCatPref').style.display='block';document.getElementById('closeBtnCatPref').style.display='block';   document.getElementById('lightSignUp').style.display='none';document.getElementById('lightSignin').style.display='none';document.getElementById('closeBtnSignin').style.display='none';document.getElementById('closeBtnSignUp').style.display='none'"><span style="width:110px; text-align:center;">Create account</span></a></div>
+            <div class="floatL"><a class="button_black" href="javascript:void(0);"><span style="text-align:center;">Cancel</span></a></div>
+          </div>
+        </div>
+        <div class="signin pL10" style="border:solid 0px;">
+          <!-- ACCORDIAN MENU START HERE -->
+          <div class="accordionBox">
+            <a href="javascript: toggleMenu(0);" class="blackLink"><p id="Q1_expande" style="display:none;" class="plus"><b>Volunteer Benefits</b></p></a>
+            <a href="javascript: toggleMenu(0);" class="blackLink"><p id="Q1_close" style="display:block;" class="minus"><b>Volunteer Benefits</b></p></a>
+            <div class="p10" id="Q1" style="display:block; margin-top:5px !important;">
+              <div class="bullet">&#8226;</div>
+              <div class="txt">SUPPORT your community through volunteering</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">FIND volunteer projects that match your interests and time</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">CREATE your own personal volunteer profile</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">Use the project wizard to easily CREATE and MANAGE your own projects online</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">INVITE people with similar interests to join your projects</div>
+              <div class="clear5"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">SHARE your ideas about how to improve your community</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">IT'S FREE... SO REGISTER NOW AND DO A LOT MORE !!</div>
+              <div class="clear10"></div>
+              <div class="txt" style="padding-left:10px;"><a href="#" class="link">Read more...</a></div>
+              <div class="clear10"></div>
+            </div>
+            <a href="javascript: toggleMenu(1);" class="blackLink"><p id="Q2_expande" style="display:block;" class="plus"><b>Organization Benefits</b></p></a>
+            <a href="javascript: toggleMenu(1);" class="blackLink"><p id="Q2_close" style="display:none;" class="minus"><b>Organization Benefits</b></p></a>
+            <div class="p10" id="Q2" style="display:none; margin-top:5px !important;">
+              <div class="bullet">&#8226;</div>
+              <div class="txt">Use the project wizard to easily CREATE and MANAGE your organization's projects online</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">FIND volunteers that match your project's needs</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">SHARE relevant project documents, pictures and videos</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">COMMUNICATE and COORDINATE with project participants and make 	sure everyone is UP TO DATE</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">PROMOTE your projects online in a forum dedicated to volunteering</div>
+              <div class="clear10"></div>
+              <div class="bullet">&#8226;</div>
+              <div class="txt">IT'S FREE... SO REGISTER NOW AND DO A LOT MORE !!</div>
+              <div class="clear10"></div>
+              <div class="txt" style="padding-left:10px;"><a href="#" class="link">Read more...</a></div>
+              <div class="clear10"></div>
+            </div>
+          </div>
+          <!-- ACCORDIAN MENU END HERE -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Category Preferences POPUP START -->
+<div style="width:943px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnCatPref" class="closeBtnFlash" style="margin-left:933px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightCatPref').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnCatPref').style.display='none';" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightCatPref" class="white_content" style="padding:10px; width:915px; height:400px;">
+    <!-- PREFERENCES POPUP START -->
+    <div id="advSearchBoxa">
+      <div class="f16 bold ">Select Category Preferences</div>
+      <div class="clear10"></div>
+      <div class="clear10 borderT"></div>
+      <div id="prodtlform" class="p10 floatL" style="border-right:solid 1px #ccc; width:550px;">
+        <div class="clear5"></div>
+        <div class="txtField">
+          <div class="floatL pR15">
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Adults<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Alternative / Holistic<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Animals / Pets<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Arts &amp; Culture<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Community Development<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Counseling<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Disabled / Handicapped<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Disaster Relief<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Drugs &amp; Substance Abuse<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Education &amp; Literacy<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Environment &amp; Agriculture<br />
+            <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+            Ethnic &amp; Race<br />
+          </div>
+          <div class="floatL pR15">
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Family<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Fundraising &amp; Charity<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Gay / Lesbian / Bi<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Government &amp; Politics<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Health &amp; Medical<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Homeless &amp; Poverty<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Housing Development<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Human &amp; Cival Rights<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            International<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Kids<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Legal Aid<br />
+            <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+            Men<br />
+          </div>
+          <div class="floatL pR8">
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Religion<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Science &amp; Technology<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Seniors / Elderly<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Social &amp; Welfare Services<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Spirituality<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Sports &amp; Recreation<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Teens<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Travel &amp; Tours<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Violence &amp; Abuse<br />
+                <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                Women<br />
+              </div>
+        </div>
+      </div>
+      <div class="floatL p10" style="width:250px; padding-top:10px; padding-left:20px;">
+        <!-- HINT TEXT HERE -->
+        <div id="newProStpC1" class="hintText" style="display:block"> <strong>Select Categories: </strong><br />
+          Select one or more preferred categories to search for projects </div>
+        <div id="newProStpC2" class="hintText"> <strong>Project Description: this is a detailed </strong><br />
+          description of the project. It can also be thought of as the Purpose of the project. </div>
+        <div id="newProStpC3" class="hintText"> <strong>Volunteer Skill Requirements:</strong><br />
+          Skill Requirements of the project. It can also be thought of as the Purpose of the project.</div>
+        <!-- HINT TEXT HERE -->
+        <div class="clear5"></div>
+        <div class="txtField" style="margin-top:235px;">
+          <div class="floatL" style="margin-left:0px;"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('signupForm').style.display='block';document.getElementById('preferences').style.display='none';"><span style="text-align:center;">Back</span></a></div>
+          <div class="floatL"><a class="button_green" href="javascript:void(0);" onclick = "document.getElementById('lightSignUpMain').style.display='block';document.getElementById('closeBtnSignUpMain').style.display='block';   document.getElementById('lightCatPref').style.display='none';document.getElementById('closeBtnCatPref').style.display='none';"><span style="width:110px; text-align:center;">Save Preferences</span></a></div>
+          <div class="floatL"><a class="button_black" href="javascript:void(0);" onclick = "document.getElementById('lightSignUpMain').style.display='block';document.getElementById('closeBtnSignUpMain').style.display='block';   document.getElementById('lightCatPref').style.display='none';document.getElementById('closeBtnCatPref').style.display='none';"><span style="text-align:center;">Skip</span></a></div>
+        </div>
+      </div>
+      <div class="clear15"></div>
+    </div>
+    <!-- PREFERENCES POPUP END -->
+  </div>
+</div>
+<!-- Category Preferences POPUP END -->
+<!-- SIGNUP POPUP END -->
+<!-- SIGNUP MAIN POPUP START -->
+<div style="width:643px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnSignUpMain" class="closeBtnFlash" style="margin-left:633px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightSignUpMain').style.display='none';document.getElementById('fade').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none';" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  
+  
+  
+  <div id="lightSignUpMain" class="white_content" style="padding:10px; width:615px; height:270px;">
+  
+    <div id="loginBox" style="width:610px; border:solid 0px; display:table;">
+      <div id="signupForm" style="border:solid 0px;">
+        <div class="f18 bold ">What would you like to do today?</div>
+        <div class="clear10"></div>
+        <div class="clear10 borderT"></div>
+        <div class="">
+          <!-- DESHBOARD START -->
+          <div id="profileDesh" style="margin-left:10px; display:table; border:solid 0px;">
+            <div class="floatL">
+              <div class="ico" style="width:70px;"><a href="javascript:void(0);" onclick = "document.getElementById('light').style.display='block';document.getElementById('closeBtnFlash').style.display='block'; document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none';"><img src="images/icons/Whatyouwanttodotoday/FindaProject.png" width="65" height="65" border="0" alt="" /></a></div>
+              <div class="txt" style="width:235px; margin-right:10px;"><span class="f18 bold"><a href="javascript:void(0);" onclick = "document.getElementById('light').style.display='block';document.getElementById('closeBtnFlash').style.display='block'; document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none';">Find a Project</a></span><br />
+                Search for a volunteer project based on your interests and time</div>
+            </div>
+            <div class="floatL mL10">
+              <div class="ico" style="width:70px;"><a href="javascript:void(0);" onclick="document.getElementById('lightCP1').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnCP1').style.display='block';document.getElementById('createAcPopA').style.display='block';document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none'; document.getElementById('createAcPopB').style.display='none'; document.getElementById('createAcPopC').style.display='none'; document.getElementById('createAcPopD').style.display='none'; document.getElementById('createAcPopE').style.display='none'; document.getElementById('createAcPopF').style.display='none'; document.getElementById('createAcPopG').style.display='none';"><img src="images/icons/Whatyouwanttodotoday/NewProject.png" width="65" height="65" border="0" alt="" /></a></div>
+              <div class="txt" style="width:185px; margin-right:5px;"><span class="f18 bold"><a href="javascript:void(0);" onclick="document.getElementById('lightCP1').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnCP1').style.display='block';document.getElementById('createAcPopA').style.display='block';document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none'; document.getElementById('createAcPopB').style.display='none'; document.getElementById('createAcPopC').style.display='none'; document.getElementById('createAcPopD').style.display='none'; document.getElementById('createAcPopE').style.display='none'; document.getElementById('createAcPopF').style.display='none'; document.getElementById('createAcPopG').style.display='none';">Create a New Project</a></span><br />
+                Create a new project using the DOalot project wizard</div>
+            </div>
+            <div class="clear17"></div>
+            <div class="floatL">
+              <div class="ico" style="width:70px;"><a href="registerYourOrganization.html"><img src="images/icons/Whatyouwanttodotoday/RegisteryourOrganization.png" width="65" height="65" border="0" alt="" /></a></div>
+              <div class="txt" style="width:235px; margin-right:10px;"><span class="f18 bold"><a href="registerYourOrganization.html">Register your Organization</a></span><br />
+                Register your organization to create and manage your volunteer projects online</div>
+            </div>
+            <div class="floatL mL10">
+              <div class="ico" style="width:70px;"><a href="takeatour.html"><img src="images/icons/Whatyouwanttodotoday/Takethetour.png" width="65" height="65" border="0" alt="" /></a></div>
+              <div class="txt" style="width:180px;"><span class="f18 bold"><a href="takeatour.html">Take the tour</a></span><br />
+                Take a video tour to see how to create and manage volunteer projects on DOalot</div>
+            </div>
+            <div class="clear17"></div>
+            <div style="margin-left:195px;"><a class="button_go" href="javascript:void(0);" onclick="document.getElementById('myAcLight').style.display='block';document.getElementById('myAcCloseBtn').style.display='block';document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none';"><span style="text-align:center; color:#FFFFFF; width:180px;">Go to 'My Account'</span></a></div>
+            <div class="clear10"></div>
+          </div>
+          <!-- DESHBOARD START -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SIGNUP MAIN POPUP END -->
+<!-- MYACCOUNT POPUP START -->
+<div style="width:713px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="myAcCloseBtn" class="closeBtnFlash" style="margin-left:703px;"><a href = "javascript:void(0)" onclick = "document.getElementById('myAcLight').style.display='none';document.getElementById('myAcCloseBtn').style.display='none';document.getElementById('fade').style.display='none'" style="display:block; width:24px; height:24px;"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="myAcLight" class="white_content" style="padding:10px;width:685px; height:390px;">
+    <div id="loginBox" style="height:190px;">
+      <div>
+        <div class="content clearfix">
+          <div id="loginBox" class="pL10 pR10" style="height:300px;">
+            <div>
+              <div class="floatL f16 bold">My Account</div>
+              <div class="floatR">179 reviews for 10 projects <img src="images/starRate1.gif" width="10" height="11" align="absmiddle" alt="" /><img src="images/starRate1.gif" width="10" height="11" align="absmiddle" alt="" /><img src="images/starRate1.gif" width="10" height="11" align="absmiddle" alt="" /><img src="images/starRate1.gif" width="10" height="11" align="absmiddle" alt="" /><img src="images/starRate2.gif" width="10" height="11" align="absmiddle" alt="" /></div>
+              </div>
+            <div class="clear10"></div>
+            <div class="clear10 borderT"></div>
+            <!-- DESHBOARD START -->
+            <div id="profileDesh">
+              <div class="deshL">
+                <div class="ico"><a href="personalInformation.html"><img src="images/icons/MyAccountPage/Personal Information.png" width="65" height="65" border="0" alt="" /></a></div>
+                <div class="txt"><span class="f18 bold"><a href="personalInformation.html">Personal Information</a></span><br />
+                  Edit your personal information</div>
+              </div>
+              <div class="deshR" style="margin:0 0 0 12px">
+                <div class="ico"><a href="preferences.html"><img src="images/icons/MyAccountPage/Preferences.png" width="65" height="65" border="0" alt="" /></a></div>
+                <div class="txt"><span class="f18 bold"><a href="preferences.html">Preferences</a></span><br />
+                  Create your personal preferences to find projects that match your interests and time </div>
+              </div>
+              <div class="clear17"></div>
+              <div class="deshL">
+                <div class="ico"><a href="myProjects.html"><img src="images/icons/MyAccountPage/MyProjects.png" width="65" height="65" border="0" alt="" /></a></div>
+                <div class="txt"><span class="f18 bold"><a href="myProjects.html">My Projects</a></span><br />
+                  See a list of all your projects that you are participating in</div>
+              </div>
+              <div class="deshR" style="margin:0 0 0 12px">
+                <div class="ico"><a href="myForums.html"><img src="images/icons/MyAccountPage/MyForums.png" width="65" height="65" border="0" alt="" /></a></div>
+                <div class="txt"><span class="f18 bold"><a href="myForums.html">My Blogs</a></span><br />
+                  See a list of all forum discussions that you are participating in </div>
+              </div>
+              <div class="clear17"></div>
+              <div class="deshL">
+                <div class="ico"><a href="myOrganizations.html"><img src="images/icons/MyAccountPage/MyOrganizations.png" width="65" height="65" border="0" alt="" /></a></div>
+                <div class="txt"><span class="f18 bold"><a href="myOrganizations.html">My Organizations</a></span><br />
+                  Register your organization to begin creating <br />
+                  and managing volunteer projects </div>
+              </div>
+              <div class="deshR" style="margin:0 0 0 12px">
+                <div class="ico"><a href="myNetwork.html"><img src="images/icons/MyAccountPage/MyNetwork.png" width="65" height="65" border="0" alt="" /></a></div>
+                <div class="txt"><span class="f18 bold"><a href="myNetwork.html">My Network</a></span><br />
+                  See a list of contacts in your private network</div>
+              </div>
+              <div class="clear15"></div>
+              <div class="clear15 borderT"></div>
+              <div>
+                <div class="deshL">
+                  <div class="ico"><a href="projectSearchResults.html"><img src="images/icons/MyAccountPage/QuickSearch.png" width="65" height="65" border="0" alt="" /></a></div>
+                  <div class="txt"><span class="f18 bold"><a href="projectSearchResults.html">Quick Search</a></span><br />
+                    Search for projects based on your personal preferences </div>
+                </div>
+                <div class="floatL mL10" style="margin:0 0 0 15px">
+                  <div class="ico" style="width:70px;"><a href="javascript:void(0);" onclick = "document.getElementById('lightCP1').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnCP1').style.display='block';document.getElementById('createAcPopA').style.display='block';document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none'; document.getElementById('createAcPopB').style.display='none'; document.getElementById('createAcPopC').style.display='none'; document.getElementById('createAcPopD').style.display='none'; document.getElementById('createAcPopE').style.display='none'; document.getElementById('createAcPopF').style.display='none'; document.getElementById('createAcPopG').style.display='none';"><img src="images/icons/Whatyouwanttodotoday/NewProject.png" width="65" height="65" border="0" alt="" /></a></div>
+                  <div class="txt" style="width:185px; margin-right:5px;"><span class="f18 bold"><a href="javascript:void(0);" onclick="document.getElementById('lightCP1').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnCP1').style.display='block';document.getElementById('createAcPopA').style.display='block';document.getElementById('lightSignUpMain').style.display='none';document.getElementById('closeBtnSignUpMain').style.display='none'; document.getElementById('createAcPopB').style.display='none'; document.getElementById('createAcPopC').style.display='none'; document.getElementById('createAcPopD').style.display='none'; document.getElementById('createAcPopE').style.display='none'; document.getElementById('createAcPopF').style.display='none'; document.getElementById('createAcPopG').style.display='none';">Create a New Project</a></span><br />
+                    Create a new project using the DOalot project wizard</div>
+                </div>
+                <div class="clear10"></div>
+              </div>
+            </div>
+            <!-- DESHBOARD END -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MYACCOUNT POPUP END -->
+<div id="fade" class="black_overlay" style="height: 850px;"></div>
+<!-- ADVANCE SEARCH POPUP END -->
+<!-- PRIVACY POLICY POPUP START -->
+<div style="width:700px; margin:0px auto; border:solid 0px #fff; padding-top:0px; height:0px;">
+  <div id="closeBtnPolicy" class="closeBtnFlash" style="margin-left:717px;"><a href = "javascript:void(0)" onclick = "document.getElementById('lightPolicy').style.display='none'; document.getElementById('closeBtnPolicy').style.display='none'; document.getElementById('fade').style.display='none';"><img src="images/spacer.gif" width="24" height="24" border="0" alt="" /></a></div>
+  <div id="lightPolicy" class="white_content" style="padding:10px; width:700px; height:350px;">
+    <div id="advSearchBoxa" style="height:350px; overflow-y:scroll;">
+      <div class="f18 caps bold" style="padding-left:20px; padding-top:10px;">Doalot Privacy Policy</div>
+      <div id="prodtlform" class="p20">
+        <div class="clear5"></div>
+        <div class="txtField"> Doalot Volunteer Organization (&quot;we&quot; or &quot;us&quot;) is committed to protecting the privacy of customers, especially those who access and use our Web site located at URL <a href="http://www.doalot.org/">www.doalot.org</a> (the &quot;Site&quot;). <br />
+          <br />
+          This Privacy Policy (&quot;Policy&quot;) is designed to inform you about the types of information that we gather about you and your organization, how we may use that information, whether we disclose it to anyone, and the choices you have regarding our use of that information. <strong>This Policy may change from time to time, so please check back periodically</strong>. <br />
+          <br />
+          <strong>1. What information do we collect from you?</strong><br />
+          Our Site collects two types of information about its visitors: Personally Identifiable Information and Non-Personally Identifiable Information. Our primary goal in collecting information from you is to provide you with efficient and effective service while using our Site.
+          Personally Identifiable Information: This refers to information that specifically identifies who you are. We request Personally Identifiable Information when you order a product or service, register a product, fill out surveys, or correspond with us. This information might include your name, email address, telephone number or address. <br />
+          <br />
+          Non-Personally Identifiable Information: This refers to information that does not by itself identify a specific individual. We gather this information each time you access our Site. This information, compiled and analyzed on both a personal and an aggregated basis, may include the Uniform Resource Locator (&quot;URL&quot;) of the web site you visited just prior to accessing our Site, the URL you go to after leaving our Site, what browser you are using, and your Internet Protocol (&quot;IP&quot;) address. A URL is the global address of documents and other resources on the World Wide Web. An IP address is an identifier for a computer or device on a Transmission Control Protocol/Internet Protocol (&quot;TCP/IP&quot;) network, such as the World Wide Web. Networks use the TCP/IP protocol to route information based on the IP address of the destination. In other words, an IP address is a number that is automatically assigned to your computer whenever you are surfing the Web, allowing Web servers to locate and identify your computer. Computers require IP addresses in order for users to communicate on the Internet, browse and shop. <br />
+          <br />
+          <strong>2. How do we use the information that we receive from you?</strong><br />
+          Our primary goal in collecting personal information from our customers and other visitors to our Site is to provide those customers and visitors with a superior customized online experience. We use customer contact information to contact members and inform them of information regarding projects and to send promotional e-mails about products and services that may be of interest to them. <br />
+          <br />
+          We may also perform statistical analyses of aggregate customer behavior. For instance, we may analyze which pages on our Site receive the most visitors or how long visitors spend reviewing those pages when visiting the Site. This allows us to measure relative member interest in the various areas of our Site. We then use that information to improve the content of our Site, to enhance your experience when visiting the Site, to customize the content and/or layout of the Site's pages, and to provide the services required by our individual customers. <br />
+          <br />
+          <strong>3. With whom do we share your information?</strong><br />
+          Except in the situations described in the following paragraph, we do not share your Personally Identifiable Information with third parties. You should also consult the privacy policy of our on-line store, which is managed by one of the firms with whom we do business. The on-line store's privacy policy may differ from our privacy policy. <br />
+          <br />
+          From time to time, we may be required by law enforcement or judicial authorities to provide Personally Identifiable Information to appropriate governmental authorities or other third parties in conjunction with a judicial, administrative or other proceeding. We will disclose Personally Identifiable Information upon receipt of a valid court order or subpoena or in order to assist a law enforcement investigation. We fully cooperate with law enforcement agencies in identifying those who use our Site's services for illegal activities. We reserve the right to report to law enforcement agencies any activities that we in good faith believe to be unlawful. <br />
+          <br />
+          <strong>4. Privacy Policy changes</strong><br />
+          If we make changes to any terms or conditions of the Privacy Policy, the changes will be posted in this document so that you will always know what information we gather as well as how we might use that information and to whom we may disclose it. We may change, modify, add or remove portions of this Privacy Policy at any time. Please be sure to check this page before proceeding to use our Site <br />
+          <br />
+        </div>
+        <div class="clear15"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="fade" class="black_overlay" style="height: 850px;"></div>
+<!-- PRIVACY POLICY POPUP END -->
+<div style="margin:0; padding:0; width:100%;">
+<div id="outer">
+  <div id="contain-all">
+    <div id="pageWrapper">
+      <!-- HEADER START HERE -->
+      <div id="header">
+        <div class="logo"><a href="index.html"><img src="images/doalot_logo.jpg" alt="Doalot.org" width="141" height="120" border="0" /></a></div>
+        <div class="nav1">
+          <div class="donateBtn"><a class="button_orange" href="#" onclick = "document.getElementById('lightDonate').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnDonate').style.display='block'"><span style="text-align:center; width:100px;">Make a Donation</span></a></div>
+          <div class="topnav" style="margin-left:20px;">
+            <div class="floatL">&nbsp; <a href="takeatour.html">TOUR</a><a href="VolunteerBenefits.html">VOLUNTEERS</a><a href="OrgBenefits.html">ORGANIZATIONS</a><a href="#" onclick = "document.getElementById('lightSignin').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnSignin').style.display='block'">BLOGS</a><a href="#">FAQs</a><a href="aboutUs.html">US</a> </div>
+            <div class="languageComb">
+              <!-- SELECT LANGUAGE BOX START -->
+              <UL id="nav" style="padding:0px; margin:0px;">
+                <LI><A href="#" class="main" style="font-weight:normal">Language</A>
+                  <UL>
+                    <LI><A class="daddy" href="#">English</A></LI>
+                    <LI><A class="daddy" href="#">Spanish</A></LI>
+                  </UL>
+                </LI>
+              </UL>
+              <!-- SELECT LANGUAGE BOX END -->
+            </div>
+          </div>
+          <div class="clear10"></div>
+          <div style="position:relative">
+          <div style="position:absolute; left: -245px; top: -60px; z-index:4000">
+          <!-- CATEGORY BALOON START HERE -->
+<div id="catBaloonNew" style="display:none; margin-left:262px; margin-top:80px; z-index:3002;">
+            <div class="baloon1T2"><img src="images/bubbleBox2_T.gif" width="472" height="20" alt="" /></div>
+            <div class="baloon1M" style="width:441px;">
+              <form method="GET" action="" name="myForm" onsubmit="return false;">
+                <div class="borderB" style="text-align:right; height:25px;"> <a href="javascript:void(0);" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', true);">Check All</a> &nbsp;|&nbsp; <a href="javascript:void(0);" onclick="SetAllCheckBoxes('myForm', 'myCheckbox', false);">Uncheck All</a> &nbsp;|&nbsp; <a href="javascript:void(0);" onClick="document.getElementById('catBaloon2').style.display='none';">Apply</a> &nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" onClick="document.getElementById('catBaloonNew').style.display='none';" class="smallText"><img src="images/icon_closeSml.gif" width="12" height="12" border="0" alt="" /> Close</a></div>
+                <div class="clear10"></div>
+                <div class="lb_txtField">
+                  <div class="floatL pR8" style="padding-right:50px">
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Adults<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Alternative / Holistic<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Animals / Pets<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Arts &amp; Culture<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Community Development<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Counseling<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Disabled / Handicapped<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Disaster Relief<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Drugs &amp; Substance Abuse<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Education &amp; Literacy<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Environment &amp; Agriculture<br />
+                    <input type="checkbox" name="myCheckbox" style="margin-right:5px;" />
+                    Ethnic &amp; Race<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Religion<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Science &amp; Technology<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Seniors / Elderly<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Social &amp; Welfare Services<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Spirituality<br />
+                  </div>
+                  <div class="floatL pR8">
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Sports &amp; Recreation<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Family<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Fundraising &amp; Charity<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+
+                    Gay / Lesbian / Bi<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Government &amp; Politics<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Health &amp; Medical<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Homeless &amp; Poverty<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Housing Development<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Human &amp; Cival Rights<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    International<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Kids<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Legal Aid<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Men<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Teens<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Travel &amp; Tours<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Violence &amp; Abuse<br />
+                    <input name="myCheckbox" type="checkbox" style="margin-right:5px;" />
+                    Women<br />
+                  </div>
+                  <div class="floatL pR8"> </div>
+                </div>
+                <div class="clear7"></div>
+              </form>
+            </div>
+            <div class="baloon1B"><img src="images/bubbleBox2_B.gif" width="472" height="9" /></div>
+          </div>
+  <!-- CATEGORY BALOON END HERE -->
+          </div>
+          <div class="searchBar">
+            <div class="searchOption">
+              <div style=" float:left; width:225px; height:22px; background:#f4f8d7; border:1px solid #d8e782; margin-right:3px;">
+              <div class="searchFieldDiv" style="width:225px;">
+                <a href="javascript:void(0);" onClick="document.getElementById('catBaloonNew').style.display='block'; showHideStuff(3,'advSerHint',22);" class="inputhover"><input class="searchFieldNew" name="Search" style="width:225px; color:#B0ADAD" type="text" value="Search for a project…" onMouseOver="Tip('<div id=hintBox><div class=top><img src=images/hintTopBg.gif width=202 /></div><div class=middle>Enter search keywords such as &quot;<b>disaster relief</b>&quot; or &quot;<b>environment</b>&quot;</div><div class=bottom><img src=images/hintBottomBg.gif width=202 /></div></div>', WIDTH, 202, PADDING, 0)" onmouseout=UnTip() /></a>
+              </div>
+                
+            </div>
+              <div class="nearField" style="width:225px; float:left;">
+                <input name="near" id="near" style="width:225px; color:#B0ADAD" class="searchField" type="text" value="Near..."  onMouseOver="Tip('<div id=hintBox><div class=top><img src=images/hintTopBg.gif width=202 /></div><div class=middle>Enter country, state, province, city, town, county OR post / zip code</div><div class=bottom><img src=images/hintBottomBg.gif width=202 /></div></div>', WIDTH, 202, PADDING, 0)" onmouseout=UnTip() />
+              </div> 
+              <div class="floatL" style="margin-left:5px;"><a class="button_go" href="projectSearchResults.html" ><span style="text-align:center;">DO</span></a></div>
+              <div class="clear5"></div>
+              <div class="searchBtn"> <a href="javascript:void(0);"  onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnFlash').style.display='block'" class="underline">Advanced Search</a>
+                <!--<input name="" type="button" class="inputFieldBtn" style="width:110px;" value="Advance Search" onclick = "document.getElementById('advSearchBox').style.display='block'; document.getElementById('signinBox').style.display='none';" />-->
+              </div>
+            </div>
+            <div class="advanceSearch" nowrap="nowrap">Already a member?</div>
+            <div style="float:right;">
+              <!-- The tab on top -->
+              <div class="tab" style=" width:90px;  border:solid 0px;">
+                <div><a href="javascript:void(0);" onclick="document.getElementById('lightSignin').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnSignin').style.display='block';" class="underline">Login</a> | <a href="#" onclick = "document.getElementById('fade').style.display='block'; document.getElementById('closeBtnregisterNewPod').style.display='block';document.getElementById('registerNewPod').style.display='block';" class="underline">Register</a></div>
+              </div>
+              <!-- / top -->
+            </div>
+          </div>
+        	</div>
+        </div>
+      </div>
+      <!-- HEADER END HERE -->
+      
+      <div class="clear"></div>
+      <!-- SPOTLIGHT START HERE -->
+      <div id="spotlight" style="display:inline">
+        <div class="flashSpotlight">
+          <!-- SPOTLIGHT START HERE -->
+          <div id="contentscrall" style="float:left; border:1px solid #494949;">
+<div id="sliderMain">
+	<div style="padding:0; margin:0; width: 720px; height: 270px; float:left; overflow: hidden; position: relative;" class="sliderContentsWrap">
+    	<div style="padding:0; margin:0; width: 6080px; height: 270px; position: absolute; left:0;" class="contentWrap">
+						<div style="float:left; width: 720px; height: 270px;" class="contentscrall">
+                    <pre style=" background:url(slideImages/gallery-img1.jpg) no-repeat left top; width:720px; height:270px; border:0; padding:0; margin:0;"><div style="padding:15px 0 0 20px; line-height:normal; margin:130px 0 0 0; float:right; width:310px; height:100px; background:#000000;"><p style="font-size:24px; float:left; margin:0; padding:0; color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Get your Business going?</p><br />
+<p style="font-size:11px; color:#FFFFFF; margin:0; line-height:18px; padding:0;float:left; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Amplify has been painstakingly designed to be top quality
+in all aspects. You can expect a theme crafted with
+attention to detail and studio polish.  <a href="#" style="color:#2880a1;">Read more...</a></p></div>			
+				</pre>
+			</div>
+						<div style="float:left; width: 720px; height: 270px;" class="contentscrall">
+                    <pre style=" background:url(slideImages/gallery-img2.jpg) no-repeat left top; width:720px; height:270px; border:0; padding:0; margin:0;"><div style="padding:15px 0 0 20px; line-height:normal; margin:130px 0 0 0; float:right; width:310px; height:100px; background:#000000;"><p style="font-size:24px; float:left; margin:0; padding:0; color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Get your Business going?</p><br />
+<p style="font-size:11px; color:#FFFFFF; margin:0; line-height:18px; padding:0;float:left; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Amplify has been painstakingly designed to be top quality
+in all aspects. You can expect a theme crafted with
+attention to detail and studio polish.  <a href="#" style="color:#2880a1;">Read more...</a></p></div>			
+				</pre>
+			</div>
+						<div style="float:left; width: 720px; height: 270px;" class="contentscrall">
+                    <pre style=" background:url(slideImages/gallery-img3.jpg) no-repeat left top; width:720px; height:270px; border:0; padding:0; margin:0;"><div style="padding:15px 0 0 20px; line-height:normal; margin:130px 0 0 0; float:right; width:310px; height:100px; background:#000000;"><p style="font-size:24px; float:left; margin:0; padding:0; color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Get your Business going?</p><br />
+<p style="font-size:11px; color:#FFFFFF; margin:0; line-height:18px; padding:0;float:left; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Amplify has been painstakingly designed to be top quality
+in all aspects. You can expect a theme crafted with
+attention to detail and studio polish.  <a href="#" style="color:#2880a1;">Read more...</a></p></div>			
+				</pre>
+			</div>
+			<div style="float:left; width: 720px; height: 270px;" class="contentscrall">
+                    <pre style=" background:url(slideImages/gallery-img4.jpg) no-repeat left top; width:720px; height:270px; border:0; padding:0; margin:0;"><div style="padding:15px 0 0 20px; line-height:normal; margin:130px 0 0 0; float:right; width:310px; height:100px; background:#000000;"><p style="font-size:24px; float:left; margin:0; padding:0; color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Get your Business going?</p><br />
+<p style="font-size:11px; color:#FFFFFF; margin:0; line-height:18px; padding:0;float:left; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Amplify has been painstakingly designed to be top quality
+in all aspects. You can expect a theme crafted with
+attention to detail and studio polish.  <a href="#" style="color:#2880a1;">Read more...</a></p></div>			
+				</pre>
+			</div>
+		
+					<div style="float:left; width: 720px; height: 270px;" class="contentscrall">
+                    <pre style=" background:url(slideImages/gallery-img5.jpg) no-repeat left top; width:720px; height:270px; border:0; padding:0; margin:0;"><div style="padding:15px 0 0 20px; line-height:normal; margin:130px 0 0 0; float:right; width:310px; height:100px; background:#000000;"><p style="font-size:24px; float:left; margin:0; padding:0; color:#FFFFFF; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Get your Business going?</p><br />
+<p style="font-size:11px; color:#FFFFFF; margin:0; line-height:18px; padding:0;float:left; font-family: Arial, Helvetica, sans-serif; font-weight:normal;">Amplify has been painstakingly designed to be top quality
+in all aspects. You can expect a theme crafted with
+attention to detail and studio polish.  <a href="#" style="color:#2880a1;">Read more...</a></p></div>			
+				</pre>
+			</div>
+		
+	</div></div>
+</div>
+<div style="float:left; width:720px; height:25px; background:#494949; padding:0; margin:0;">
+<div class="buttonsWrap" style="padding-top:2px;">
+	<a rel="1" class="buttons bt1 active" href="#"></a>
+	<a rel="2" class="buttons bt2" href="#"></a> 
+	<a rel="3" class="buttons bt3" href="#"></a>
+	<a rel="4" class="buttons bt4" href="#"></a>
+	<a rel="5" class="buttons bt5" href="#"></a> 
+</div>
+</div>
+    </div>
+
+    <script type="text/javascript">
+			var addthis_config = {"data_track_clickback":true};
+		</script>
+		<script type="text/javascript" src="slideImages/addthis_widget.js"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+			var _gaq = _gaq || [];
+			_gaq.push(["_setAccount","UA-15728484-1"]);
+			(function() {
+				var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+				ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+				var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		//]]>
+		</script> 
+          <!-- SPOTLIGHT END HERE -->
+          <div class="clear15"></div>
+          <div  id="content">
+            <div class="col309New pR155">
+                <div class="volunteer"><span><a href="VolunteerBenefits.html" class="blackLinkNew">Volunteers</a></span>
+                <p class="volunteer" style=" margin:5px 0 0 0; padding:0;">DOalot Features:</p></div>
+              <div class="clear5" style="border-bottom:1px dotted #d3d3ce;"></div>
+              <div class="volunteerpodContent">
+              <ul>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Support your community through volunteeering</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Find volunteer projects based on your time and interests</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Create your own volunteer projects and invite people to join</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Build your own volunteer network</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Share ideas with others who want to support their community</li>
+              </ul>
+              <div style="float:right; margin-top:6px;"><a href="VolunteerBenefits.html" style="color:#2880a1; font-weight:bold; font-size:11px;">Read more &gt;&gt;</a></div>
+              </div>
+             
+            </div>
+            <div class="col309New">
+              <div class="volunteer"><span><a href="VolunteerBenefits.html" class="blackLinkNew">Organizations</a></span>
+              <p class="volunteer" style=" margin:5px 0 0 0; padding:0;">DOalot Features:</p></div>
+              <div class="clear5" style="border-bottom:1px dotted #d3d3ce;"></div>
+              <div class="volunteerpodContent">
+              <ul>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Promote your volunteer projects online</li>
+			  <li style=" margin-left:0;"><img src="images/bullet.jpg" />Find volunteers to join your projects</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Develop successful projects using project management tools</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Improve team communication and coordination</li>
+              <li style=" margin-left:0;"><img src="images/bullet.jpg" />Get access to funding and other resources for your projects</li>
+              </ul>
+               <div style="float:right; margin-top:6px;"><a href="OrgBenefits.html" style="color:#2880a1; font-weight:bold; font-size:11px;">Read more &gt;&gt;</a></div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="spotlightText"><strong><span class="f24 orange" style="float:left; padding:0 0 12px 14px; margin:0;">TALK LESS. <br />
+          DO A LOT <br />
+          MORE</span> </strong>
+          <font style="float:left; padding:0 0 0 14px; margin:0;">Support your neighborhood and community by joining a local volunteer project or create your own project</font>
+          <div class="clear10"></div>
+          <div style="text-align:center; padding-top:10px;">
+            <div class="greenBar">
+              <div><a href="javascript:void(0);" onclick = "document.getElementById('lightSignUp').style.display='block';document.getElementById('fade').style.display='block';document.getElementById('closeBtnSignUp').style.display='block'; document.getElementById('closeBtnSignUp').style.display='block';document.getElementById('signupForm').style.display='block';document.getElementById('preferences').style.display='none';">DOalot now - it's free!</a></div>
+            </div>
+          </div>
+          <div class="clear15"></div>
+          <div class="col250">
+            <div class="upComingHead">Upcoming meetups in
+              <p id="addhere" style="color:#98ad22; text-decoration:none; margin:5px 0 0px 0;"><a  href="javascript:;">Copenhagen, Denmark</a><br><a id="editme1s" href="javascript:;" style="width: 157px; text-decoration:none; font-weight: normal; font-size: 11px;">(Change your location)</a></p>
+			  </div>
+            <div class="clear5"></div>
+            <div class="upComingEvents">
+              <div class="recUCE">
+                <div class="col1rec">MAY
+                  <div>16</div>
+                  2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a><br />
+                  Event item text (H4) will be here </div>
+              </div>
+              <div class="clear"></div>
+              <div class="recUCE">
+                <div class="col1rec">MAY
+                  <div>16</div>
+                  2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a><br />
+                  Event item text (H4) will be here </div>
+              </div>
+              <div class="clear"></div>
+              <div class="recUCE">
+                <div class="col1rec">MAY
+                  <div>16</div>
+                  2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a><br />
+                  Event item text (H4) will be here </div>
+              </div>
+              <div class="clear"></div>
+              <div class="recUCE" style="border-bottom:0px;">
+                <div class="col1rec">MAY
+                  <div>16</div>
+                  2010</div>
+                <div class="col2rec"> <a href="#">Event Item Heading (H4)</a><br />
+                  Event item text (H4) will be here </div>
+              </div>
+              <div class="clear"></div>
+              <div style="text-align:right;"> <a href="searchCalendar.html">more...</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SPOTLIGHT END HERE -->
+      <div class="clear"></div>
+      <!-- CONTENT START HERE -->
+      <!-- CONTENT END HERE -->
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<div id="footerNew">
+<div style="width:1000px; margin:0 auto;">
+  <div class="td1">
+   	<h1>Latest Projects</h1>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+             <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+             <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+            <p><a href="#"><img src="images/recentPost-img1.jpg" border="0" /></a></p>
+  </div>
+  <div class="td3" style=" margin-right:40px; margin-left:10px;">
+  	<h1>Blogroll</h1>
+    <p><img src="images/blogImg.jpg" style="margin-right:10px; float:left;" /><a href="#">Find volunteers to join your projects unteers to join your projects</a></p>
+    <p><img src="images/blogImg.jpg" style="margin-right:10px; float:left;" /><a href="#">Find volunteers to join your projects unteers to join your projects project</a></p>
+    <p><img src="images/blogImg.jpg" style="margin-right:10px; float:left;" /><a href="#">Find volunteers to join your projects unteers to join</a></p>
+  </div>
+    <div class="td3">
+  	<h1>Subscribe</h1>
+    <p><input class="searchFieldNew" style="font-size:11px; background:#FFFFFF; width:150px; color:#999999; border:1px solid #CCCCCC;" type="text" value="Your Email Here..." />
+    </p>
+    <p>Subscribe to our monthly newsletter
+    </p>
+  </div></div>
+ 
+        <div class="td2">
+         <div style="width:1000px; margin:0 auto; ">
+        <p style="width:640px; float:left; color:#a8a8a8; padding-top:15px;">© Copyright 2011 DOalot Volunteer. All rights reserved</p>
+        <p style="width:280px; float:left; text-align:right; padding-right:20px;"><a href="#"><img src="images/footerIcon.png" border="0" /></a></p>
+        </div>
+      </div></div>
+	  
+</body>
+</html>

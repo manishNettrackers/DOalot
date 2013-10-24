@@ -1,0 +1,5 @@
+[screen6]Change scroll bar style (as shown here) – see http://ashitvora.com/2010/10/cool-scrollbar/ 
+Use this scrollbar style on all pages
+Answer
+Now, there’s one issue with this, it works only on webkit based browsers (eg. Chrome, Safari)
+

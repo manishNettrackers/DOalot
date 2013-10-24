@@ -1,0 +1,27 @@
+.black_overlay{
+     display: none;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     width: 100%;
+     background-color:#000;
+     z-index:3001;
+     -moz-opacity: 0.8;
+     opacity:.80;
+     filter: alpha(opacity=80);
+}
+.white_content {
+     display: none;
+     position: absolute;
+     margin-top: 40px;
+     padding: 0px;
+     border: 14px solid #000;
+     background-color: white;
+     z-index:3002;
+}
+
+.closeBtnFlash { width:24px; height:24px; position:absolute; z-index:3008; margin-top:34px; margin-left:714px; display:none;}
+.closeBtnFlash img { width:24px; height:24px;}
+
+* html .closeBtnFlash { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='./images/close.png');}
+.closeBtnFlash[class] {background:url(../images/close.png) no-repeat left top;}

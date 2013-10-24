@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DOALOT.ORG</title>
+<script type="text/javascript" src="scripts/demo.js"></script>
+<script type="text/javascript" src="scripts/datePicker.js"></script>
+<link rel="stylesheet" type="text/css" href="css/datePicker.css" media="screen" />
+<link href="css/doalot_style.css" rel="stylesheet" type="text/css" />
+<link href="css/cssBasedLightBox.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/slide.css" type="text/css" media="screen" />
+<!-- ACCORDION script START -->
+<link rel="stylesheet" href="css/accordion.css" type="text/css" media="screen" />
+<script type="text/javascript" src="scripts/accordian.js"></script>
+<!-- ACCORDION script END -->
+<script src="scripts/showHidePopup.js" type="text/javascript"></script>
+<link href="css/tabcontent.css" type="text/css" rel="stylesheet" />
+<script src="scripts/tabcontent.js" type="text/javascript"></script>
+<script src="scripts/menu.js" type="text/javascript"></script>
+<script src="scripts/checkUncheck.js" type="text/javascript"></script>
+<!-- jQuery - the core -->
+<script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
+<!-- Sliding effect -->
+<script src="scripts/slide.js" type="text/javascript"></script>
+<!-- SPOTLIGHT GALLERY -->
+<link rel="stylesheet" type="text/css" href="css/spotlight_style.css" />
+<script type="text/javascript" src="scripts/spotlight/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/spotlight/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.editinplace.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	$("#editme1").editInPlace({
+		saving_animation_color: "#ECF2F8",
+		callback: function(idOfEditor, enteredText, orinalHTMLContent, settingsParams, animationCallbacks) {
+			animationCallbacks.didStartSaving();
+			setTimeout(animationCallbacks.didEndSaving, 2000);
+			return enteredText;
+		}
+	});
+
+	$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);
+	});
+</script>
+<script language="Javascript">
+$(document).ready(function() {
+
+	$('.searchField').each(function() {
+		var searchField = this.value;
+		$(this).focus(function() {
+			if(this.value == searchField) {
+				this.value = '';
+			}
+		});
+		$(this).blur(function() {
+			if(this.value == '') {
+				this.value = searchField;
+			}
+		});
+	});
+
+});
+
+</script>
+<!-- SPOTLIGHT GALLERY -->
+</head>
+<body>
+<script type="text/javascript" src="scripts/thumbView.js"></script><!-- CATEGORY BALOON START HERE -->
+<DIV class="tabcontent" id="proDtl2" style="display:block;">
+          <div class="p10">
+            <div id="prodtlform">
+              <div class="label">Project Owner:</div>
+              <div class="txtField">
+                <input name="Search2" type="text" class="searchField" style="width:190px;" />
+                &nbsp;<img src="images/email.png" width="19" height="20" border="0" style="margin:0; padding:0;" />
+              </div>        
+              <div class="clear5"></div>
+              <div class="clear5"></div>
+              <div class="label">Project Manager:</div>
+              <div class="txtField">
+                <input name="Search" type="text" class="searchField" style="width:190px;" />
+  &nbsp;<img src="images/email.png" width="19" height="20" border="0" style="margin:0; padding:0;" /> </div>
+              <div class="clear5"></div>
+              <div class="label">Project Address</div>
+              <div class="txtField"></div>
+              <div class="clear5"></div>
+              <div class="label" style="padding:0 0 0 30px; width:200px;">Address 1:</div>
+              <div class="txtField">
+                <input name="Search3" type="text" class="searchField" style="width:220px;" />
+              </div>
+              <div class="clear5"></div>
+              <div class="clear5"></div>
+              <div class="label" style="padding:0 0 0 30px; width:200px;">Address 2:</div>
+              <div class="txtField">
+                <input name="Search3" type="text" class="searchField" style="width:220px;" />
+              </div>
+              <div class="clear5"></div>
+              <div class="clear5"></div>
+              <div class="label" style="padding:0 0 0 30px; width:200px;">Address 3:</div>
+              <div class="txtField">
+                <input name="Search3" type="text" class="searchField" style="width:220px;" />
+              </div>
+              <div class="clear5"></div>
+              <div class="clear5"></div>
+              <div class="label" style="padding:0 0 0 30px; width:200px;">Post/Zip Code<br />
+                City, Town or Country
+              :</div>
+              <div class="txtField">
+                <input name="Search3" type="text" class="searchField" style="width:105px;" />
+                <input name="Search5" type="text" class="searchField" style="width:105px;" />
+              </div>
+              <div class="clear5"></div>
+              <div class="label" style="padding:0 0 0 30px; width:200px;">State or Province:</div>
+              <div class="txtField">
+                <input name="Search3" type="text" class="searchField" style="width:220px;" />
+              </div>
+              <div class="clear5"></div>
+              <div class="clear5"></div>
+              <div class="label" style="padding:0 0 0 30px; width:200px;">Country:</div>
+              <div class="txtField">
+                <input name="Search3" type="text" class="searchField" style="width:220px;" />
+              </div>
+              <div class="clear5"></div>
+              <div class="clear5"></div>
+              <div class="label">Project URL:</div>
+              <div class="txtField">
+                <input name="Search4" type="text" class="searchField" style="width:220px;" />
+              </div>
+              <div class="clear5"></div>
+            </div>
+          </div>
+        </DIV>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+/** CSS is optional, but can be used for button styling. The above preview uses this CSS **/
+.buttons, .control{
+	background: #000000;
+	padding: 3px 10px;
+	margin: 5px;
+	line-height: 0px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.active{
+	background: #00CC66;
+	color: #00FF00;
+}
+.buttons:hover, .control:hover{
+	background: #0099FF;
+}
+</style>
+<script>
+$('.contentWrap').liteSlider({
+	content : '.content',		// The panel selector. Can be a list also. eg:li
+	width : 760,			// Width of the slider
+	height : 300,			// Height of the slider
+	autoplay : true,		// Autoplay the slider. Values, true & false
+	delay : 3,			// Transition Delay. Default 3s
+	buttonsClass : 'buttons',	// Button's class
+	activeClass : 'active',		// Active class
+	controlBt : '.control',		// Control button selector
+	playText : 'Play',		// Play text
+	pauseText : 'Stop'		// Stop text
+});
+
+</script>
+</head>
+
+<body>
+<!-- Add the plugin to the element of class "contentWrap" and the property "content" to the element of class "content" -->
+<div class="contentWrap">
+	<div class="content"> Content 1 </div>
+	<div class="content"> Content 2 </div>
+	<div class="content"> Content 3 </div>
+	<div class="content"> Content 4 </div>
+</div>
+
+<!-- or add it to a list -->
+<ul class="contentWrap">
+	<li>Content 1</li>
+	<li>Content 2</li>
+	<li>Content 3</li>
+	<li>Content 4</li>
+</ul>
+
+<!-- Here "content" property is the element "li" -->
+
+</body>
+</html>

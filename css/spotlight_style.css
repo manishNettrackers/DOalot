@@ -1,0 +1,51 @@
+#featured {
+	BORDER: #ccc 2px solid; POSITION: relative; WIDTH: 470px; PADDING-RIGHT: 250px; BACKGROUND: #eee; HEIGHT: 310px; OVERFLOW: hidden;
+}
+#featured UL.ui-tabs-nav {
+	POSITION: absolute; PADDING-BOTTOM: 0px; OVERFLOW-X: hidden; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 250px; PADDING-RIGHT: 0px; HEIGHT: 310px; OVERFLOW: auto; TOP: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px; LEFT: 0px
+}
+#featured UL.ui-tabs-nav LI {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; COLOR: #666; FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+#featured UL.ui-tabs-nav LI IMG {
+	BORDER-BOTTOM: #eee 1px solid; BORDER-LEFT: #eee 1px solid; PADDING-BOTTOM: 2px; MARGIN: 2px 5px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BACKGROUND: #fff; FLOAT: left; BORDER-TOP: #eee 1px solid; BORDER-RIGHT: #eee 1px solid; PADDING-TOP: 2px
+}
+#featured UL.ui-tabs-nav LI SPAN {
+	LINE-HEIGHT: 18px; FONT-FAMILY: Verdana; FONT-SIZE: 11px
+}
+#featured LI.ui-tabs-nav-item A {
+	LINE-HEIGHT: 20px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; DISPLAY: block; BACKGROUND: #fff; HEIGHT: 60px; COLOR: #333; TEXT-DECORATION: none
+}
+#featured LI.ui-tabs-nav-item A:hover {
+	BACKGROUND: #f2f2f2
+}
+#featured LI.ui-tabs-selected {
+	BACKGROUND: url(../images/spotlight_Images/selected-item.gif) no-repeat left top
+}
+#featured UL.ui-tabs-nav LI.ui-tabs-selected A {
+	BACKGROUND: #ccc
+}
+#featured .ui-tabs-panel {
+	POSITION: relative; WIDTH: 400px; BACKGROUND: #999; HEIGHT: 250px; margin-left:240px;
+}
+#featured .ui-tabs-panel .info {
+	POSITION: absolute; margin-left:0px; margin-top:240px; width:480px;  BACKGROUND: url(../images/spotlight_Images/transparent-bg.png) repeat-x; HEIGHT: 70px; z-index:100;
+}
+#featured .ui-tabs-panel .info A.hideshow {
+	POSITION: absolute; LINE-HEIGHT: 20px; MARGIN: 0px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; FONT-FAMILY: Verdana; BACKGROUND: #333; COLOR: #f0f0f0; FONT-SIZE: 11px; TOP: -20px; RIGHT: 10px
+}
+#featured .info H2 {
+	PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 5px; FONT-FAMILY: Georgia, serif; COLOR: #fff; FONT-SIZE: 1.2em; OVERFLOW: hidden; FONT-WEIGHT: normal; PADDING-TOP: 5px
+}
+#featured .info P {
+	LINE-HEIGHT: 15px; MARGIN: 0px 5px; FONT-FAMILY: Verdana; COLOR: #f0f0f0; FONT-SIZE: 11px
+}
+#featured .info A {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+#featured .info A:hover {
+	TEXT-DECORATION: underline
+}
+#featured .ui-tabs-hide {
+	DISPLAY: none
+}

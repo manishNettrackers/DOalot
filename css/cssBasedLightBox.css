@@ -1,0 +1,29 @@
+ .black_overlay{
+     display: none;
+     position: absolute;
+     top: 0%;
+     left: 0%;
+     width: 100%;
+     background-color: black;
+     z-index:3001;
+     -moz-opacity: 0.8;
+     opacity:.80;
+     filter: alpha(opacity=80);
+}
+.white_content {
+     display: none;
+     position: absolute;
+     margin-top: 70px;
+     width: 802px;
+     height: 530px;
+     padding: 0px;
+     border: 8px solid #000;
+     background-color: white;
+     z-index:3002;
+}
+
+.closeBtnFlash { width:24px; height:24px; position:absolute; z-index:3003; margin-top:64px; margin-left:814px; display:none;}
+.closeBtnFlash img { width:24px; height:24px;}
+
+* html .closeBtnFlash { filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale, src='./images/close.png');}
+.closeBtnFlash[class] {background:url(../images/close.png) no-repeat left top;}
