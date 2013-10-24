@@ -1,4 +1,4 @@
 DOalot
 ======
 
-DOalot-NetTrackers
+DOalot is a Project Management tools.
